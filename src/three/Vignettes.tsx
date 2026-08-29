@@ -7,7 +7,7 @@ import { VIGNETTE_RADIUS } from './constants'
 import type { Palette } from '../lib/types'
 
 /**
- * Twelve procedural character vignettes, one per alcove. Pure geometry —
+ * One procedural character vignette per alcove. Pure geometry —
  * no copyrighted art. Each vignette is culled by camera proximity so only
  * the near scene pays for draw calls.
  */
@@ -323,20 +323,6 @@ const MOTIF_SCENES: Record<string, Scene> = {
         })}
       </Spin>
       <Sparkles count={20} radius={1.7} color="#fff0d9" />
-    </>
-  ),
-
-  'scarf-wind': (p) => (
-    <>
-      <Ribbon count={26} length={3.4} color={p.primary} amp={0.5} width={0.09} />
-      <Ribbon count={18} length={2.3} color={p.accent} amp={0.4} width={0.06} />
-      <Orbit radius={1.2} speed={1.3} tilt={[0.5, 0, 0]}>
-        <mesh>
-          <boxGeometry args={[0.9, 0.02, 0.02]} />
-          <meshBasicMaterial color={p.secondary} toneMapped={false} />
-        </mesh>
-      </Orbit>
-      <SoftGlow color={p.glow} size={0.5} opacity={0.3} />
     </>
   ),
 }

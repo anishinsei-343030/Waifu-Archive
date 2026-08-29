@@ -1,6 +1,6 @@
 import type { Palette, MotifId } from '../lib/types'
 
-/** The order the twelve halls appear along the corridor. */
+/** The order the halls appear along the corridor. */
 export const MOTIF_ORDER: MotifId[] = [
   'bayonet-halo', // Rem
   'horns-aurora', // Zero Two
@@ -13,7 +13,6 @@ export const MOTIF_ORDER: MotifId[] = [
   'ice-crystal', // Emilia
   'clock-hands', // Kurumi Tokisaki
   'sun-spark', // Taiga Aisaka
-  'scarf-wind', // Mikasa Ackerman
 ]
 
 /** Procedural accent palettes — creative direction, not sourced facts. */
@@ -29,5 +28,4 @@ export const PALETTES: Record<MotifId, Palette> = {
   'ice-crystal': { primary: '#9fd8ff', glow: '#e1f4ff', accent: '#ffffff', secondary: '#6db9ff' },
   'clock-hands': { primary: '#8d1f35', glow: '#ffb3a3', accent: '#ffd166', secondary: '#c9a227' },
   'sun-spark': { primary: '#ffb340', glow: '#ffd98f', accent: '#fff2cc', secondary: '#ff8a5c' },
-  'scarf-wind': { primary: '#e63946', glow: '#ff9ea8', accent: '#ffffff', secondary: '#ff5f7f' },
 }

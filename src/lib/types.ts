@@ -24,7 +24,6 @@ export type MotifId =
   | 'ice-crystal'
   | 'clock-hands'
   | 'sun-spark'
-  | 'scarf-wind'
 
 export interface Waifu {
   id: string

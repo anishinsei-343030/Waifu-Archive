@@ -6,14 +6,15 @@ export function Footer() {
       <h2 className="font-display text-2xl font-black tracking-[-0.02em] text-ink/70 md:text-3xl">Eternal love</h2>
       <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-mute">
         This archive was built as a tribute to the writers, studios, and voice
-        actresses who made these twelve unforgettable, and to the fans who keep
+        actresses who made these heroines unforgettable, and to the fans who keep
         them alive.
       </p>
 
       <p className="mx-auto mt-8 max-w-lg text-[0.7rem] leading-relaxed text-mute/70">
         WAIFU ARCHIVE is an unofficial fan project. All characters, quotes,
-        names, and series belong to their respective owners. No copyrighted art
-        is used; every visual is procedurally generated. Facts and quotes were
+        names, and series belong to their respective owners. The 3D world is
+        procedurally generated; the character portraits are supplied images and
+        belong to their respective owners. Facts and quotes were
         researched from published sources listed in SOURCES.md.
       </p>
 

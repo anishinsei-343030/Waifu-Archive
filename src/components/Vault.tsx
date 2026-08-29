@@ -20,8 +20,8 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
           The Vault
         </h2>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-mute">
-          Twelve alcoves, twelve relics. Jump to any legend and the hall will
-          glide you there.
+          One legend per alcove, and alcoves keep arriving. Jump to any one
+          and the hall will glide you there.
         </p>
       </Reveal>
 

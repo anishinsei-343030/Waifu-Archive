@@ -1,10 +1,11 @@
 import { Reveal } from './Reveal'
+import { WAIFUS } from '../lib/waifus'
 
 const STATS = [
-  { n: '12', label: 'legendary halls' },
+  { n: String(WAIFUS.length), label: 'legendary halls' },
   { n: '2008–22', label: 'years of anime debut' },
   { n: '∞', label: 'devotion' },
-] as const
+]
 
 export function Intro() {
   return (
@@ -25,7 +26,7 @@ export function Intro() {
           figure from anime and games so vividly written that affection stops
           being ironic. The word entered the world as shorthand for a favorite
           character and left as the name for a feeling. This archive walks you
-          through the twelve who earned it most.
+          through the heroines who earned it most.
         </p>
       </Reveal>
 

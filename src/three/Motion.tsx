@@ -101,7 +101,7 @@ export function StageLight({ color = '#ffb9d0', radius = 1.6, opacity = 0.22 }: 
 
 /**
  * A flowing chain of thin boards following a sinusoid on X. Used by the
- * scarf and ribbon motifs. Animated by advancing the wave.
+ * ribbon and flowing-sheet motifs. Animated by advancing the wave.
  */
 export function Ribbon({
   count = 22,

@@ -1,7 +1,7 @@
 import type { Waifu } from './types'
 
 /**
- * The twelve hall residents. Every fact traces to a published source in
+ * The hall residents. Every fact traces to a published source in
  * SOURCES.md. No quotes or dates were invented.
  */
 export const WAIFUS: Waifu[] = [
@@ -319,34 +319,5 @@ export const WAIFUS: Waifu[] = [
     motif: 'sun-spark',
     order: 11,
     sources: ['tora-dora.fandom.com/wiki/Taiga_Aisaka', 'en.wikiquote.org/wiki/Toradora!', 'animecharactersdatabase.com/quotesbycharacter.php?cid=15442'],
-  },
-  {
-    id: 'mikasa',
-    image: '/portraits/mikasa.jpg',
-    name: 'Mikasa Ackerman',
-    series: 'Attack on Titan',
-    studio: 'Wit Studio',
-    debut: '2013',
-    va: 'Yui Ishikawa',
-    tagline: 'A quiet, peerless soldier whose world is cruel and beautiful',
-    bio: [
-      'Mikasa Ackerman is a peerless fighter of the Survey Corps and an Ackerman clan descendant gifted with extraordinary combat ability.',
-      'Her world centers on protecting Eren, the family she lost and then gained.',
-      'Her stoic resolve and devastating loyalty define much of the series emotional weight.',
-    ],
-    whyLoved: [
-      'Her unmatched skill and quiet presence make her one of the most formidable soldiers in anime.',
-      'The depth of her devotion to Eren gives Attack on Titan one of its most painful, resonant dynamics.',
-    ],
-    quoteEn: 'This world is cruel. It is also very beautiful.',
-    traits: [
-      { label: 'Combat', value: 10 },
-      { label: 'Resolve', value: 9 },
-      { label: 'Devotion', value: 10 },
-    ],
-    palette: { primary: '#e63946', glow: '#ff9ea8', accent: '#ffffff', secondary: '#ff5f7f' },
-    motif: 'scarf-wind',
-    order: 12,
-    sources: ['en.wikipedia.org/wiki/Attack_on_Titan_(TV_series)', 'attackontitan.fandom.com/wiki/Mikasa_Ackerman', 'phraseninja.net/quote/sekai-wa-zankoku-da-soshite-totemo-utsukushii'],
   },
 ]

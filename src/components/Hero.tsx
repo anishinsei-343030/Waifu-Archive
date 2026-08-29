@@ -38,7 +38,7 @@ export function Hero() {
 
         <Reveal delay={0.35}>
           <p className="mt-7 max-w-md text-base leading-relaxed text-mute md:max-w-lg md:text-lg">
-            A rosette-lit hall of twelve legendary anime heroines. Known as the
+            A rosette-lit hall of legendary anime heroines. Known as the
             eternal archive of the heart. Walk through, and every one of them will move for you.
           </p>
         </Reveal>
