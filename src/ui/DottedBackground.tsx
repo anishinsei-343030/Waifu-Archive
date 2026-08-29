@@ -100,7 +100,7 @@ export function DottedBackground({
 
     let renderer: Renderer
     try {
-      renderer = new Renderer({ canvas, alpha: true, antialias: false })
+      renderer = new Renderer({ canvas, alpha: true, antialias: false, webgl: 1 })
     } catch {
       return
     }
