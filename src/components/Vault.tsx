@@ -38,6 +38,31 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
                 aria-hidden="true"
               />
               <div className="relative">
+                {w.image && (
+                  <div
+                    className="relative mb-3 aspect-[4/5] overflow-hidden rounded-xl border border-white/70"
+                    style={{
+                      background: `radial-gradient(120% 120% at 30% 10%, ${w.palette.primary}55, ${w.palette.glow}33 45%, #fff 100%)`,
+                    }}
+                  >
+                    <div
+                      className="absolute inset-0 flex items-center justify-center font-display font-black leading-none"
+                      style={{ color: `${w.palette.primary}cc`, fontSize: 'clamp(3rem,9vw,4rem)' }}
+                      aria-hidden="true"
+                    >
+                      {w.name[0]}
+                    </div>
+                    <img
+                      src={w.image}
+                      alt={`${w.name} portrait`}
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                      }}
+                      className="absolute inset-0 h-full w-full object-cover object-top"
+                    />
+                  </div>
+                )}
                 <div className="mt-2 font-display text-xl font-black leading-tight text-ink md:text-2xl">
                   {w.name}
                 </div>

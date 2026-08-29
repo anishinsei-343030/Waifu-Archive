@@ -60,6 +60,37 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
                       VA <b className="text-ink/80">{w.va}</b>
                     </span>
                   </div>
+
+                  <div
+                    className="relative mt-6 aspect-[4/5] overflow-hidden rounded-2xl border border-white/70 shadow-inner"
+                    style={{
+                      background: `radial-gradient(120% 120% at 30% 10%, ${w.palette.primary}55, ${w.palette.glow}33 45%, #fff 100%)`,
+                    }}
+                  >
+                    <div
+                      className="absolute inset-0 flex items-center justify-center font-display font-black leading-none"
+                      style={{ color: `${w.palette.primary}cc`, fontSize: 'clamp(5rem,18vw,9rem)' }}
+                      aria-hidden="true"
+                    >
+                      {w.name[0]}
+                    </div>
+                    {w.image && (
+                      <img
+                        src={w.image}
+                        alt={`${w.name} portrait`}
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none'
+                        }}
+                        className="absolute inset-0 h-full w-full object-cover object-top"
+                      />
+                    )}
+                    <div
+                      className="pointer-events-none absolute inset-x-0 bottom-0 h-10"
+                      style={{ background: `linear-gradient(to top, ${c}33, transparent)` }}
+                      aria-hidden="true"
+                    />
+                  </div>
                 </div>
 
                 <div className="md:[direction:ltr]" style={{ direction: 'ltr' }}>

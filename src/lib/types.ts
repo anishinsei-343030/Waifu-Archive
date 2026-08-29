@@ -42,6 +42,8 @@ export interface Waifu {
   motif: MotifId
   order: number
   sources: string[]
+  /** Portrait asset path under /public, e.g. /portraits/rem.jpg. Optional. */
+  image?: string
 }
 
 export interface SceneStop {

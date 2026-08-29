@@ -7,6 +7,7 @@ import type { Waifu } from './types'
 export const WAIFUS: Waifu[] = [
   {
     id: 'rem',
+    image: '/portraits/rem.jpg',
     name: 'Rem',
     series: 'Re:Zero − Starting Life in Another World',
     studio: 'White Fox',
@@ -34,6 +35,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'zero-two',
+    image: '/portraits/zero-two.jpg',
     name: 'Zero Two',
     series: 'DARLING in the FRANXX',
     studio: 'CloverWorks / Studio Trigger / A-1 Pictures',
@@ -61,6 +63,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'kurisu',
+    image: '/portraits/kurisu.jpg',
     name: 'Kurisu Makise',
     series: 'Steins;Gate',
     studio: 'White Fox',
@@ -88,6 +91,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'megumin',
+    image: '/portraits/megumin.jpg',
     name: 'Megumin',
     series: 'KonoSuba: God\'s Blessing on This Wonderful World!',
     studio: 'Studio Deen',
@@ -115,6 +119,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'marin',
+    image: '/portraits/marin.jpg',
     name: 'Marin Kitagawa',
     series: 'My Dress-Up Darling',
     studio: 'CloverWorks',
@@ -143,6 +148,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'holo',
+    image: '/portraits/holo.jpg',
     name: 'Holo',
     series: 'Spice and Wolf',
     studio: 'Passione',
@@ -171,6 +177,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'kaguya',
+    image: '/portraits/kaguya.jpg',
     name: 'Kaguya Shinomiya',
     series: 'Kaguya-sama: Love Is War',
     studio: 'A-1 Pictures',
@@ -199,6 +206,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'asuna',
+    image: '/portraits/asuna.jpg',
     name: 'Asuna Yuuki',
     series: 'Sword Art Online',
     studio: 'A-1 Pictures',
@@ -227,6 +235,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'emilia',
+    image: '/portraits/emilia.jpg',
     name: 'Emilia',
     series: 'Re:Zero − Starting Life in Another World',
     studio: 'White Fox',
@@ -255,6 +264,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'kurumi',
+    image: '/portraits/kurumi.jpg',
     name: 'Kurumi Tokisaki',
     series: 'Date A Live',
     studio: 'AIC PLUS+',
@@ -283,6 +293,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'taiga',
+    image: '/portraits/taiga.jpg',
     name: 'Taiga Aisaka',
     series: 'Toradora!',
     studio: 'J.C.Staff',
@@ -311,6 +322,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'mikasa',
+    image: '/portraits/mikasa.jpg',
     name: 'Mikasa Ackerman',
     series: 'Attack on Titan',
     studio: 'Wit Studio',
