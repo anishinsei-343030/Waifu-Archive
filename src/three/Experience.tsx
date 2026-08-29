@@ -36,9 +36,12 @@ export function Experience() {
           <ToriiGate />
           <MotionLabObjects />
           {MOTIF_ORDER.map((id, i) => (
-            <group key={id} scale={1.5}>
-              <Vignette motif={id} palette={PALETTES[id]} position={[alcoveX(i) ?? 0, 0, alcoveZ(i)]} />
-            </group>
+            <Vignette
+              key={id}
+              motif={id}
+              palette={PALETTES[id]}
+              position={[alcoveX(i) ?? 0, 0, alcoveZ(i)]}
+            />
           ))}
         </group>
         <Effects tier={tier} />
