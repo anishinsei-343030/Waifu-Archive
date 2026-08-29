@@ -15,7 +15,6 @@
 
   --font-body: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
-  --font-jp: "Zen Kaku Gothic New", sans-serif;
 
   --radius-glass: 28px;
 
@@ -146,11 +145,6 @@ html.lenis body {
     animation: sheen 5s ease-in-out infinite;
   }
 
-  .jp-accent {
-    font-family: var(--font-jp);
-    letter-spacing: 0.18em;
-  }
-
   .noise-overlay {
     position: fixed;
     inset: 0;
@@ -215,12 +209,6 @@ html.lenis body {
 
   .spin-ring {
     animation: spin 26s linear infinite;
-  }
-
-  .gate-jp {
-    font-family: var(--font-jp);
-    font-weight: 900;
-    letter-spacing: 0.34em;
   }
 }
 

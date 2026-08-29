@@ -29,8 +29,6 @@ export type MotifId =
 export interface Waifu {
   id: string
   name: string
-  jpName: string
-  romanji: string
   series: string
   studio: string
   debut: string
@@ -39,7 +37,6 @@ export interface Waifu {
   bio: string[]
   whyLoved: string[]
   quoteEn: string
-  quoteJp: string
   traits: Trait[]
   palette: KurumiPalette
   motif: MotifId

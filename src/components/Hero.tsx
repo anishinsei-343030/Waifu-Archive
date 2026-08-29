@@ -1,15 +1,15 @@
 import { Reveal } from './Reveal'
 import { lenisRef } from '../lib/ScrollManager'
 
-const kanji = [
-  '伝説',
-  '神作',
-  '回廊',
-  '永遠',
-  '桜',
-  '乙女',
-  '夢',
-  '絆',
+const marquee = [
+  'legend',
+  'masterpiece',
+  'corridor',
+  'eternal',
+  'blossom',
+  'maiden',
+  'dream',
+  'bond',
 ]
 
 export function Hero() {
@@ -24,8 +24,8 @@ export function Hero() {
     <section id="hero" className="relative h-[180vh]">
       <div className="sticky top-0 flex h-screen flex-col items-center justify-center px-6 text-center">
         <Reveal delay={0.1}>
-          <p className="jp-accent mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-mute">
-            ( 真実の伝説 )
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-mute">
+            ( the eternal archive )
           </p>
         </Reveal>
 
@@ -64,7 +64,7 @@ export function Hero() {
         <Reveal delay={0.65} className="mt-12">
           <div className="flex items-center gap-3 text-xs font-medium tracking-[0.2em] text-mute">
             <span className="size-2 animate-float rounded-full bg-pinkglow" aria-hidden="true" />
-            <span className="jp-accent">scroll</span>
+            <span>scroll</span>
           </div>
         </Reveal>
       </div>
@@ -73,8 +73,8 @@ export function Hero() {
         <div className="marquee-track">
           {[0, 1].map((copy) => (
             <div key={copy} className="flex shrink-0 items-center gap-8 px-4" aria-hidden={copy === 1}>
-              {kanji.map((k) => (
-                <span key={k + copy} className="gate-jp flex items-center gap-8 text-4xl text-ink/25 md:text-6xl">
+              {marquee.map((k) => (
+                <span key={k + copy} className="flex items-center gap-8 text-4xl text-ink/25 md:text-6xl">
                   {k}
                   <span className="text-xl text-pink/40">✦</span>
                 </span>

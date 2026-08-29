@@ -13,8 +13,8 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
   return (
     <section id="vault" className="relative mx-auto max-w-6xl px-6 py-28">
       <Reveal>
-        <p className="jp-accent mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
-          ( 宝庫 )
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
+          ( the Vault )
         </p>
         <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] font-black leading-none tracking-[-0.03em] text-ink">
           The Vault
@@ -38,9 +38,6 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
                 aria-hidden="true"
               />
               <div className="relative">
-                <div className="jp-accent text-xs font-bold tracking-widest" style={{ color: w.palette.primary }}>
-                  ( {w.jpName} )
-                </div>
                 <div className="mt-2 font-display text-xl font-black leading-tight text-ink md:text-2xl">
                   {w.name}
                 </div>

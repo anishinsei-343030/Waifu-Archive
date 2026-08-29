@@ -2,22 +2,18 @@ import { Reveal } from './Reveal'
 
 const TILES = [
   {
-    jp: '回転',
     title: 'Orbit & spin',
     body: 'Every relic in the hall turns on its own rhythm, steady and alive. Drag the floating shapes in the lab to feel the weight of the glass world.',
   },
   {
-    jp: '追従',
     title: 'Petal rain',
     body: 'Eight hundred sakura petals fall on closed paths, each one a triplanar ghost. The katana cursor trails them as you move.',
   },
   {
-    jp: '捻転',
     title: 'Scroll dollies',
     body: 'The whole corridor is one continuous dolly shot. Nothing teleports; the camera simply glides, scrubbed by your scroll.',
   },
   {
-    jp: '呼吸',
     title: 'Breath & glow',
     body: 'Glass panels breathe, lanterns sway, halos pulse. The lab is the nursery where every motion in the hall was rehearsed.',
   },
@@ -29,8 +25,8 @@ export function MotionLab() {
       <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
         <Reveal>
           <div>
-            <p className="jp-accent mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
-              ( 実験所 )
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
+              ( the lab )
             </p>
             <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] font-black leading-none tracking-[-0.03em] text-ink">
               Motion Lab
@@ -57,7 +53,6 @@ export function MotionLab() {
                 style={{ background: 'var(--color-pinkglow)' }}
                 aria-hidden="true"
               />
-              <div className="jp-accent text-lg font-bold text-pink">{t.jp}</div>
               <h3 className="mt-2 font-display text-2xl font-black text-ink">{t.title}</h3>
               <p className="mt-3 max-w-md text-sm leading-relaxed text-mute">{t.body}</p>
             </article>

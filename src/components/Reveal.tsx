@@ -24,14 +24,18 @@ export function Reveal({
     if (!el) return
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduced) return
-    const tween = gsap.from(el, {
-      opacity: 0,
-      y,
-      duration: 1,
-      delay,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none reverse' },
-    })
+    const tween = gsap.fromTo(
+      el,
+      { opacity: 0, y },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none reverse' },
+      },
+    )
     return () => {
       tween.scrollTrigger?.kill()
       tween.kill()
@@ -39,7 +43,7 @@ export function Reveal({
   }, [y, delay])
 
   return (
-    <div ref={ref} className={className} style={{ willChange: 'transform', opacity: 0 }}>
+    <div ref={ref} className={className} style={{ willChange: 'transform' }}>
       {children}
     </div>
   )

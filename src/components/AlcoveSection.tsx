@@ -23,10 +23,6 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
               <div className={`grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] ${flip ? 'md:[direction:rtl]' : ''}`}>
                 <div className="md:[direction:ltr]">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="pill rounded-full px-3.5 py-1.5 text-xs font-bold text-ink">
-                      <span className="jp-accent mr-1.5" style={{ color: c }}>( {w.jpName} )</span>
-                      {w.romanji}
-                    </span>
                     <span className="pill rounded-full px-3 py-1.5 text-xs font-semibold text-mute">
                       № {String(index + 1).padStart(2, '0')}
                     </span>
@@ -60,7 +56,7 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
                     <span>
                       Debut <b className="text-ink/80">{w.debut}</b>
                     </span>
-                    <span className="jp-accent">
+                    <span>
                       VA <b className="text-ink/80">{w.va}</b>
                     </span>
                   </div>
@@ -76,7 +72,6 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
                       “
                     </div>
                     <p className="-mt-4 text-lg font-bold leading-snug text-ink">{w.quoteEn}</p>
-                    <p className="jp-accent mt-2 text-sm text-mute">{w.quoteJp}</p>
                   </blockquote>
 
                   <div className="mt-5 space-y-3">
@@ -88,7 +83,7 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
                   </div>
 
                   <div className="mt-5 rounded-2xl border border-white/60 bg-white/40 p-5">
-                    <p className="jp-accent mb-2 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-mute">
+                    <p className="mb-2 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-mute">
                       Why she is loved
                     </p>
                     <ul className="space-y-1.5">

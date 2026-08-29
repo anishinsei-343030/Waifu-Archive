@@ -8,12 +8,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'rem',
     name: 'Rem',
-    jpName: 'レム',
-    romanji: 'remu',
     series: 'Re:Zero − Starting Life in Another World',
     studio: 'White Fox',
     debut: '2016',
-    va: 'Inori Minase (水瀬いのり)',
+    va: 'Inori Minase',
     tagline: 'A devoted demon maid whose loyalty becomes unconditional love',
     bio: [
       'Rem is a maid of the Roswaal mansion and the younger twin sister of Ram, belonging to the oni (demon) race with an affinity for water magic.',
@@ -24,7 +22,6 @@ export const WAIFUS: Waifu[] = [
       'Her journey from self-loathing to self-acceptance in the From Zero arc is one of the series most beloved moments.',
     ],
     quoteEn: 'Let\'s start from here. From square one... no, from zero!',
-    quoteJp: '「ここから始めましょう——いいえ、ゼロから！」',
     traits: [
       { label: 'Devotion', value: 10 },
       { label: 'Courage', value: 9 },
@@ -38,12 +35,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'zero-two',
     name: 'Zero Two',
-    jpName: 'ゼロツー',
-    romanji: 'zero tsū',
     series: 'DARLING in the FRANXX',
     studio: 'CloverWorks / Studio Trigger / A-1 Pictures',
     debut: '2018',
-    va: 'Haruka Tomatsu (戸松遥)',
+    va: 'Haruka Tomatsu',
     tagline: 'A hybrid klaxosaur who searches for her one true darling',
     bio: [
       'Zero Two, designated Code:002, is a hybrid of human and klaxosaur who pilots the FRANXX unit Strelizia.',
@@ -54,7 +49,6 @@ export const WAIFUS: Waifu[] = [
       'The star-crossed partnership she shares with Hiro is central to the series emotional impact.',
     ],
     quoteEn: 'I\'ve found you, my Darling.',
-    quoteJp: '「やっと会えた…ダーリン…」',
     traits: [
       { label: 'Fierce', value: 10 },
       { label: 'Playful', value: 7 },
@@ -68,12 +62,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'kurisu',
     name: 'Kurisu Makise',
-    jpName: '牧瀬 紅莉栖',
-    romanji: 'makise kurisu',
     series: 'Steins;Gate',
     studio: 'White Fox',
     debut: '2011',
-    va: 'Asami Imai (今井麻美)',
+    va: 'Asami Imai',
     tagline: 'A neuroscience prodigy who falls for the mad scientist',
     bio: [
       'Kurisu Makise is an eighteen-year-old neuroscience genius and visiting researcher who becomes a member of the Future Gadget Laboratory.',
@@ -84,7 +76,6 @@ export const WAIFUS: Waifu[] = [
       'The tragic time-travel weight of her storylines gives her science a romantic, human heart.',
     ],
     quoteEn: 'The passage of time depends entirely on where you\'re standing. Relativity theory, it\'s so romantic. But it\'s just so tragic too.',
-    quoteJp: '「時間は人の意識によって長くなったり短くなったりする。相対性理論はとてもロマンチックで、とても切ない」',
     traits: [
       { label: 'Intellect', value: 10 },
       { label: 'Logic', value: 9 },
@@ -98,23 +89,20 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'megumin',
     name: 'Megumin',
-    jpName: 'めぐみん',
-    romanji: 'megumin',
     series: 'KonoSuba: God\'s Blessing on This Wonderful World!',
     studio: 'Studio Deen',
     debut: '2016',
-    va: 'Rie Takahashi (高橋李依)',
+    va: 'Rie Takahashi',
     tagline: 'A crimson demon arch wizard who loves only Explosion magic',
     bio: [
       'Megumin is a young arch wizard of the Crimson Demon Clan who has devoted her entire being to mastering the single spell Explosion.',
       'The first to join Kazuma party, she is also the protagonist of the spin-off KonoSuba: An Explosion on This Wonderful World!.',
     ],
     whyLoved: [
-      'Her over-the-top chuunibyou self-introductions and dramatic flair make her endlessly entertaining.',
+      'Her over-the-top, melodramatic self-introductions and dramatic flair make her endlessly entertaining.',
       'Her stubborn, almost religious dedication to Explosion despite its impracticality is endearingly comedic.',
     ],
     quoteEn: 'My name is Megumin! My calling is that of an arch wizard, who controls explosion magic, the strongest of all offensive magic.',
-    quoteJp: '「我が名はめぐみん！アークウィザードを生業とし、最強の攻撃魔法、爆裂魔法を操る者！」',
     traits: [
       { label: 'Explosion', value: 10 },
       { label: 'Confidence', value: 9 },
@@ -128,12 +116,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'marin',
     name: 'Marin Kitagawa',
-    jpName: '喜多川海夢',
-    romanji: 'kitagawa marin',
     series: 'My Dress-Up Darling',
     studio: 'CloverWorks',
     debut: '2022',
-    va: 'Hina Suguta (直田姫奈)',
+    va: 'Hina Suguta',
     tagline: 'A gal who dares to love what she loves openly',
     bio: [
       'Marin Kitagawa is a second-year high school student at Kikko Academy who appears to be a trendy gyaru but is secretly a passionate otaku.',
@@ -145,7 +131,6 @@ export const WAIFUS: Waifu[] = [
       'Her direct, sunny warmth draws out the shy Wakana, making her an empowering figure for anyone who ever hid their passions.',
     ],
     quoteEn: 'I mean, when it comes to things you like, doesn\'t gender not even matter?',
-    quoteJp: '「てゆーか、好きなものに男とか女とか関係なくない？」',
     traits: [
       { label: 'Enthusiasm', value: 10 },
       { label: 'Kindness', value: 9 },
@@ -159,12 +144,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'holo',
     name: 'Holo',
-    jpName: 'ホロ',
-    romanji: 'horo',
     series: 'Spice and Wolf',
     studio: 'Passione',
     debut: '2008',
-    va: 'Ami Koshimizu (小清水亜美)',
+    va: 'Ami Koshimizu',
     tagline: 'A wise wolf goddess seeking her distant homeland',
     bio: [
       'Holo is a centuries-old wolf harvest deity from Yoitsu who blessed the wheat fields of Pasloe before choosing to leave with the traveling merchant Kraft Lawrence.',
@@ -176,7 +159,6 @@ export const WAIFUS: Waifu[] = [
       'Beneath the confident exterior lies genuine vulnerability and fear of loneliness, creating a deeply human character.',
     ],
     quoteEn: 'I am Holo, the wise wolf.',
-    quoteJp: '「わっちは賢狼ホロじゃ」',
     traits: [
       { label: 'Wisdom', value: 10 },
       { label: 'Merchant cunning', value: 9 },
@@ -190,12 +172,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'kaguya',
     name: 'Kaguya Shinomiya',
-    jpName: '四宮かぐや',
-    romanji: 'shinomiya kaguya',
     series: 'Kaguya-sama: Love Is War',
     studio: 'A-1 Pictures',
     debut: '2019',
-    va: 'Aoi Koga (古賀葵)',
+    va: 'Aoi Koga',
     tagline: 'A genius strategist undone by her own heart',
     bio: [
       'Kaguya Shinomiya is vice president of Shuchiin Academy student council and the scion of the powerful Shinomiya family.',
@@ -207,7 +187,6 @@ export const WAIFUS: Waifu[] = [
       'Her moments of vulnerability beneath flawless composure are deeply human and endearing.',
     ],
     quoteEn: 'In order for love to be equal, someone has to make the first move.',
-    quoteJp: '「loveは平等にしたかったのだから、最初の一歩は踏み込まなきゃ」',
     traits: [
       { label: 'Intellect', value: 10 },
       { label: 'Pride', value: 9 },
@@ -221,12 +200,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'asuna',
     name: 'Asuna Yuuki',
-    jpName: '結城明日奈',
-    romanji: 'yūki asuna',
     series: 'Sword Art Online',
     studio: 'A-1 Pictures',
     debut: '2012',
-    va: 'Haruka Tomatsu (戸松遥)',
+    va: 'Haruka Tomatsu',
     tagline: 'A fierce swordswoman whose love defies worlds',
     bio: [
       'Asuna Yuuki is the deuteragonist of Sword Art Online and sub-commander of the Knights of the Blood Oath, one of the game most formidable players.',
@@ -238,7 +215,6 @@ export const WAIFUS: Waifu[] = [
       'Her willingness to risk everything for the people she loves set a powerful standard for action anime heroines.',
     ],
     quoteEn: 'Even if what you\'re doing seems futile, you still have to do it.',
-    quoteJp: '「たとえ無駄だとしても、やるしかないのよ」',
     traits: [
       { label: 'Sword skill', value: 10 },
       { label: 'Resolve', value: 9 },
@@ -252,12 +228,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'emilia',
     name: 'Emilia',
-    jpName: 'エミリア',
-    romanji: 'emiria',
     series: 'Re:Zero − Starting Life in Another World',
     studio: 'White Fox',
     debut: '2016',
-    va: 'Rie Takahashi (高橋李依)',
+    va: 'Rie Takahashi',
     tagline: 'A silver-haired half-elf dreaming of a fair kingdom',
     bio: [
       'Emilia is a silver-haired half-elf who shares the appearance of the Witch of Envy and runs as a candidate for the royal throne of Lugnica.',
@@ -269,7 +243,6 @@ export const WAIFUS: Waifu[] = [
       'Her quiet growth toward trusting herself and others is one of the most rewarding arcs in Re:Zero.',
     ],
     quoteEn: 'Thank you, Subaru, for everything. Thank you for saving me.',
-    quoteJp: '「ありがとう、スバル。私を助けてくれて」',
     traits: [
       { label: 'Kindness', value: 10 },
       { label: 'Perseverance', value: 8 },
@@ -283,12 +256,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'kurumi',
     name: 'Kurumi Tokisaki',
-    jpName: '時崎 狂三',
-    romanji: 'tokisaki kurumi',
     series: 'Date A Live',
     studio: 'AIC PLUS+',
     debut: '2013',
-    va: 'Asami Sanada (真田アサミ)',
+    va: 'Asami Sanada',
     tagline: 'The Worst Spirit who bends time and walks her own path',
     bio: [
       'Kurumi Tokisaki is the third Spirit to appear, nicknamed the Worst Spirit for her grim methods.',
@@ -300,7 +271,6 @@ export const WAIFUS: Waifu[] = [
       'Playing with time is the theme here, and she owns every second of it with theatrical elegance.',
     ],
     quoteEn: 'No matter how big the world is, Tokisaki Kurumi is the only one who can interfere with irreversible time.',
-    quoteJp: '「世界が如何に広かろうと、不可逆の時に干渉できるのは、この時崎狂三だけですわ」',
     traits: [
       { label: 'Time control', value: 10 },
       { label: 'Elegance', value: 9 },
@@ -314,12 +284,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'taiga',
     name: 'Taiga Aisaka',
-    jpName: '逢坂 大河',
-    romanji: 'aisaka taiga',
     series: 'Toradora!',
     studio: 'J.C.Staff',
     debut: '2008',
-    va: 'Rie Kugimiya (釘宮理恵)',
+    va: 'Rie Kugimiya',
     tagline: 'The Palmtop Tiger, fierce on the outside, gentle within',
     bio: [
       'Taiga Aisaka is a short-tempered, small-statured first-year at Ohashi High, nicknamed the Palmtop Tiger for her ferocity.',
@@ -331,7 +299,6 @@ export const WAIFUS: Waifu[] = [
       'Her slow, earned vulnerability with Ryuuji gives Toradora! its unforgettable emotional arc.',
     ],
     quoteEn: 'In this world, there\'s this thing that no one has ever seen. It\'s gentle and very sweet. If you saw it, everyone would surely want it.',
-    quoteJp: '「この世界の誰一人、見たことがないものがある。それは優しくて、とても甘い」',
     traits: [
       { label: 'Fierce heart', value: 10 },
       { label: 'Hidden gentleness', value: 8 },
@@ -345,12 +312,10 @@ export const WAIFUS: Waifu[] = [
   {
     id: 'mikasa',
     name: 'Mikasa Ackerman',
-    jpName: 'ミカサ・アッカーマン',
-    romanji: 'mikasa akkāman',
     series: 'Attack on Titan',
     studio: 'Wit Studio',
     debut: '2013',
-    va: 'Yui Ishikawa (石川由依)',
+    va: 'Yui Ishikawa',
     tagline: 'A quiet, peerless soldier whose world is cruel and beautiful',
     bio: [
       'Mikasa Ackerman is a peerless fighter of the Survey Corps and an Ackerman clan descendant gifted with extraordinary combat ability.',
@@ -362,7 +327,6 @@ export const WAIFUS: Waifu[] = [
       'The depth of her devotion to Eren gives Attack on Titan one of its most painful, resonant dynamics.',
     ],
     quoteEn: 'This world is cruel. It is also very beautiful.',
-    quoteJp: '「この世界は残酷だ。そしてとても美しい」',
     traits: [
       { label: 'Combat', value: 10 },
       { label: 'Resolve', value: 9 },

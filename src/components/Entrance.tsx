@@ -6,13 +6,13 @@ export function Entrance() {
     <section className="relative h-[220vh]">
       <div className="sticky top-0 flex h-screen flex-col items-center justify-center px-6 text-center">
         <Reveal>
-          <p className="jp-accent mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
-            ( 鳥居をくぐる )
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
+            ( through the gate )
           </p>
         </Reveal>
         <Reveal delay={0.15}>
-          <h2 className="gate-jp text-[clamp(2.6rem,8vw,6rem)] text-ink/90">
-            おかえり
+          <h2 className="font-display font-black text-[clamp(2.6rem,8vw,6rem)] leading-none tracking-[-0.03em] text-ink/90">
+            welcome home
           </h2>
         </Reveal>
         <Reveal delay={0.3}>
