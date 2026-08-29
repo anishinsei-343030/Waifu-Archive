@@ -5,7 +5,7 @@ import { Petals } from './Petals'
 import { Lanterns } from './Lanterns'
 import { Effects } from './Effects'
 import { Vignette } from './Vignettes'
-import { ToriiGate, HeroConstellation, MotionLabObjects } from './Scenes'
+import { ToriiGate, HeroConstellation, FinaleSeal } from './Scenes'
 import { useDeviceTier, useReducedMotion, useMotionScale } from '../lib/hooks'
 import { alcoveZ, alcoveX } from './constants'
 import { MOTIF_ORDER, PALETTES } from '../data/palettes'
@@ -34,7 +34,7 @@ export function Experience() {
           <Lanterns count={tier === 'low' ? 14 : 28} />
           <HeroConstellation />
           <ToriiGate />
-          <MotionLabObjects />
+          <FinaleSeal />
           {MOTIF_ORDER.map((id, i) => (
             <Vignette
               key={id}

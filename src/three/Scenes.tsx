@@ -3,7 +3,6 @@ import type { ReactNode } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { scrollProgress, usePointerSmoothing } from '../lib/hooks'
-import type { SmoothPointerRefs } from '../lib/hooks'
 import { STOP, TRACK } from './constants'
 import { SoftGlow, Spin, Bob } from './Motion'
 
@@ -129,34 +128,56 @@ export function HeroConstellation() {
 }
 
 /**
- * Motion Lab: interactive demo tiles living in the corridor. Each reacts to a
- * central pointer hover — grow + spin boost — plus perpetual motion.
+ * FinaleSeal: the rose seal hanging just past the vault, overhead when the
+ * footer copy reads. Passive spin; culled by camera proximity.
  */
-export function MotionLabObjects() {
-  const pointer = usePointerSmoothing()
+export function FinaleSeal() {
   const ref = useRef<THREE.Group>(null!)
-
-  const objects = useMemo(
-    () => [
-      { kind: 'glass-cube' as const, ox: -2.3, oy: 0.6, z: -338, color: '#ffe3ee' },
-      { kind: 'shard-ball' as const, ox: 2.4, oy: 0.7, z: -352, color: '#ffb9d0' },
-      { kind: 'ribbon-knot' as const, ox: -2.5, oy: 0.5, z: -366, color: '#ff8fb2' },
-      { kind: 'spring-heart' as const, ox: 2.3, oy: 0.4, z: -380, color: '#ff5f8f' },
-    ],
-    [],
-  )
+  const sealZ = -(STOP.footer * TRACK) + 6 - 4
 
   useFrame((state) => {
     const group = ref.current
-    const dist = Math.abs(state.camera.position.z - -358)
+    const dist = Math.abs(state.camera.position.z - sealZ)
     group.visible = dist < 70
+    group.rotation.z = state.clock.elapsedTime * 0.05
   })
 
   return (
-    <group ref={ref} position={[0, 0, -358]} visible={false}>
-      {objects.map((o) => (
-        <HoverObject key={o.z} kind={o.kind} ox={o.ox} oy={o.oy} z={o.z} color={o.color} pointer={pointer} />
-      ))}
+    <group ref={ref} position={[0, 1.2, sealZ]} visible={false}>
+      <SoftGlow color="#ff7ba9" size={3.6} opacity={0.2} />
+      <Spin speed={0.4}>
+        <mesh rotation={[1.45, 0, 0]}>
+          <torusGeometry args={[1.75, 0.06, 12, 48]} />
+          <meshBasicMaterial color="#ff8fb2" toneMapped={false} />
+        </mesh>
+        <mesh rotation={[1.55, 0, 0]}>
+          <torusGeometry args={[1.32, 0.045, 12, 48]} />
+          <meshBasicMaterial color="#ffb3d1" toneMapped={false} />
+        </mesh>
+        <mesh rotation={[1.65, 0.4, 0]}>
+          <torusGeometry args={[0.92, 0.035, 12, 40]} />
+          <meshBasicMaterial color="#ffffff" toneMapped={false} />
+        </mesh>
+        <group position={[0, 0.1, 0]}>
+          <OrbitOnly speed={0.8} radius={0.62}>
+            <mesh>
+              <octahedronGeometry args={[0.16]} />
+              <meshBasicMaterial color="#ff5c9d" toneMapped={false} />
+            </mesh>
+          </OrbitOnly>
+          <OrbitOnly speed={-0.6} radius={0.62}>
+            <mesh rotation={[0, Math.PI / 4, 0]}>
+              <octahedronGeometry args={[0.13]} />
+              <meshBasicMaterial color="#ffe3ee" toneMapped={false} />
+            </mesh>
+          </OrbitOnly>
+        </group>
+        <mesh>
+          <icosahedronGeometry args={[0.5, 0]} />
+          <meshBasicMaterial color="#ff8fb2" toneMapped={false} />
+        </mesh>
+        <SoftGlow color="#ffd6e6" size={1.6} opacity={0.5} />
+      </Spin>
     </group>
   )
 }
@@ -187,104 +208,5 @@ function Shape({ kind, color, scale }: { kind: string; color: string; scale: num
       {kind === 'tetra' && <tetrahedronGeometry args={[0.9]} />}
       <meshBasicMaterial color={color} toneMapped={false} transparent opacity={0.95} />
     </mesh>
-  )
-}
-
-type LabKind = 'glass-cube' | 'shard-ball' | 'ribbon-knot' | 'spring-heart'
-
-function HoverObject({
-  kind,
-  ox,
-  oy,
-  z,
-  color,
-  pointer,
-}: {
-  kind: LabKind
-  ox: number
-  oy: number
-  z: number
-  color: string
-  pointer: SmoothPointerRefs
-}) {
-  const ref = useRef<THREE.Group>(null!)
-  const spin = useRef(0)
-
-  useFrame((state, delta) => {
-    const group = ref.current
-    const d = Math.min(delta, 0.05)
-    const v = new THREE.Vector3()
-    group.getWorldPosition(v)
-    v.project(state.camera)
-    const nx = pointer.target.current.x
-    const ny = pointer.target.current.y
-    const inside = Math.abs(v.x - nx) < 0.18 && Math.abs(v.y - ny) < 0.18
-    const boost = inside ? 3.2 : 1
-    spin.current += d * (0.5 + boost * 0.4)
-    const goal = inside ? 1.26 : 1
-    group.scale.x += (goal - group.scale.x) * 0.08
-    group.scale.y += (goal - group.scale.y) * 0.08
-    group.scale.z += (goal - group.scale.z) * 0.08
-    group.rotation.y = spin.current * 0.4
-    group.rotation.x = Math.sin(state.clock.elapsedTime * 0.4) * 0.12
-    group.position.y = oy + Math.sin(state.clock.elapsedTime * 0.9 + z) * 0.12
-  })
-
-  return (
-    <group ref={ref} position={[ox, oy, z - -358]} scale={0.001}>
-      {kind === 'glass-cube' && (
-        <group>
-          <mesh>
-            <boxGeometry args={[1.1, 1.1, 1.1]} />
-            <meshBasicMaterial color={color} transparent opacity={0.45} depthWrite={false} />
-          </mesh>
-          <mesh>
-            <boxGeometry args={[0.5, 0.5, 0.5]} />
-            <meshBasicMaterial color="#ff7ba9" toneMapped={false} />
-          </mesh>
-        </group>
-      )}
-      {kind === 'shard-ball' && (
-        <group>
-          {Array.from({ length: 22 }).map((_, i) => {
-            const phi = Math.acos(1 - (2 * (i + 0.5)) / 22)
-            const theta = Math.PI * (1 + Math.sqrt(5)) * i
-            return (
-              <mesh
-                key={i}
-                position={[Math.sin(phi) * Math.cos(theta), Math.sin(phi) * Math.sin(theta), Math.cos(phi)]}
-                rotation={[phi, theta, 0]}
-              >
-                <tetrahedronGeometry args={[0.2]} />
-                <meshBasicMaterial color={i % 3 === 0 ? '#ffffff' : color} toneMapped={false} transparent opacity={0.9} />
-              </mesh>
-            )
-          })}
-        </group>
-      )}
-      {kind === 'ribbon-knot' && (
-        <mesh>
-          <torusKnotGeometry args={[0.62, 0.2, 90, 14]} />
-          <meshBasicMaterial color={color} toneMapped={false} />
-        </mesh>
-      )}
-      {kind === 'spring-heart' && (
-        <group>
-          <mesh position={[-0.22, 0.1, 0]}>
-            <sphereGeometry args={[0.42, 20, 20]} />
-            <meshBasicMaterial color={color} toneMapped={false} />
-          </mesh>
-          <mesh position={[0.22, 0.1, 0]}>
-            <sphereGeometry args={[0.42, 20, 20]} />
-            <meshBasicMaterial color={color} toneMapped={false} />
-          </mesh>
-          <mesh position={[0, -0.55, 0]} rotation={[0, 0, Math.PI / 4]}>
-            <coneGeometry args={[0.5, 0.9, 20]} />
-            <meshBasicMaterial color={color} toneMapped={false} />
-          </mesh>
-        </group>
-      )}
-      <SoftGlow color={color} size={1.15} opacity={0.22} />
-    </group>
   )
 }

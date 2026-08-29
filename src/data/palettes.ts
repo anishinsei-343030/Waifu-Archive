@@ -13,6 +13,8 @@ export const MOTIF_ORDER: MotifId[] = [
   'ice-crystal', // Emilia
   'clock-hands', // Kurumi Tokisaki
   'sun-spark', // Taiga Aisaka
+  'petal-bloom', // Sakura Yamauchi
+  'violin-spring', // Kaori Miyazono
 ]
 
 /** Procedural accent palettes — creative direction, not sourced facts. */
@@ -28,4 +30,6 @@ export const PALETTES: Record<MotifId, Palette> = {
   'ice-crystal': { primary: '#9fd8ff', glow: '#e1f4ff', accent: '#ffffff', secondary: '#6db9ff' },
   'clock-hands': { primary: '#8d1f35', glow: '#ffb3a3', accent: '#ffd166', secondary: '#c9a227' },
   'sun-spark': { primary: '#ffb340', glow: '#ffd98f', accent: '#fff2cc', secondary: '#ff8a5c' },
+  'petal-bloom': { primary: '#ff8fa3', glow: '#ffd9e0', accent: '#ff5c9d', secondary: '#ffc4ce' },
+  'violin-spring': { primary: '#7fb5ff', glow: '#d3e6ff', accent: '#ffffff', secondary: '#a8d0ff' },
 }

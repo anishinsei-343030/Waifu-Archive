@@ -24,6 +24,8 @@ export type MotifId =
   | 'ice-crystal'
   | 'clock-hands'
   | 'sun-spark'
+  | 'petal-bloom'
+  | 'violin-spring'
 
 export interface Waifu {
   id: string
@@ -41,6 +43,10 @@ export interface Waifu {
   motif: MotifId
   order: number
   sources: string[]
+  /** Canon birthday. Day and month usually known; year only when sources agree. */
+  birth?: { month: number; day?: number; year?: number }
+  /** For heroines who died in-canon: when they left and how. */
+  deceased?: { at: string; cause: string }
   /** Portrait asset path under /public, e.g. /portraits/rem.jpg. Optional. */
   image?: string
 }

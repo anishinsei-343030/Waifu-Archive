@@ -1,11 +1,11 @@
 import { Suspense, lazy } from 'react'
 import { ScrollManager } from './lib/ScrollManager'
+import { useReducedMotion } from './lib/hooks'
 import { KatanaCursor } from './ui/KatanaCursor'
+import { DottedBackground } from './ui/DottedBackground'
 import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
-import { Entrance } from './components/Entrance'
 import { Intro } from './components/Intro'
-import { MotionLab } from './components/MotionLab'
 import { AlcoveSection } from './components/AlcoveSection'
 import { Vault } from './components/Vault'
 import { Footer } from './components/Footer'
@@ -17,8 +17,20 @@ const Experience = lazy(async () => {
 })
 
 export default function App() {
+  const reduced = useReducedMotion()
+
   return (
     <ScrollManager>
+      <div className="dot-bg" aria-hidden="true">
+        <DottedBackground
+          colors={['#ff9ec4', '#ffd6e6', '#ffffff', '#b48cff']}
+          bgColor="transparent"
+          cellSize={8}
+          paletteBias={6}
+          gamma={3}
+          play={!reduced}
+        />
+      </div>
       <div className="canvas-stage" aria-hidden="true">
         <Suspense fallback={null}>
           <Experience />
@@ -29,9 +41,7 @@ export default function App() {
       <Nav />
       <main className="relative z-10">
         <Hero />
-        <Entrance />
         <Intro />
-        <MotionLab />
         <div id="hall">
           {WAIFUS.map((w, i) => (
             <AlcoveSection key={w.id} w={w} index={i} />

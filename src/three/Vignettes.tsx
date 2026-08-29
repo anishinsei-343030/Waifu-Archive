@@ -302,6 +302,53 @@ const MOTIF_SCENES: Record<string, Scene> = {
     </>
   ),
 
+  'petal-bloom': (p) => (
+    <>
+      <Pulse min={0.92} max={1.15} speed={1.8}>
+        <mesh>
+          <icosahedronGeometry args={[0.34, 0]} />
+          <meshBasicMaterial color={p.accent} toneMapped={false} />
+        </mesh>
+      </Pulse>
+      <SoftGlow color={p.glow} size={0.95} opacity={0.5} />
+      <Orbit radius={1.1} speed={0.95} tilt={[0.4, 0, 0]}>
+        <Petal color={p.primary} />
+      </Orbit>
+      <Orbit radius={1.5} speed={-0.62} tilt={[0.7, 0, 0.4]}>
+        <Petal color={p.secondary} />
+      </Orbit>
+      <Orbit radius={0.85} speed={1.4} tilt={[1.3, 0.2, 0]}>
+        <Petal color={p.accent} small />
+      </Orbit>
+      <Sparkles count={18} radius={1.5} color={p.glow} />
+    </>
+  ),
+
+  'violin-spring': (p) => (
+    <>
+      <Spin speed={0.55}>
+        <group>
+          <Spring count={7} radius={0.5} height={1.35} color={p.primary} accent={p.accent} />
+          <mesh>
+            <sphereGeometry args={[0.22, 16, 16]} />
+            <meshBasicMaterial color={p.accent} toneMapped={false} />
+          </mesh>
+        </group>
+        <SoftGlow color={p.glow} size={0.8} opacity={0.45} />
+      </Spin>
+      <Orbit radius={1.55} speed={0.7} tilt={[0.5, 0, 0]}>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[0.7, 0.028, 6, 36]} />
+          <meshBasicMaterial color={p.secondary} toneMapped={false} />
+        </mesh>
+      </Orbit>
+      <Orbit radius={0.95} speed={-1.1} tilt={[1.1, 0.3, 0]}>
+        <Petal color={p.accent} small />
+      </Orbit>
+      <Sparkles count={16} radius={1.4} color={p.accent} />
+    </>
+  ),
+
   'sun-spark': (p) => (
     <>
       <Pulse min={0.9} max={1.28} speed={2.4}>
@@ -353,6 +400,41 @@ function Wheat({ radius, color, secondary }: { radius: number; color: string; se
           <mesh key={i} position={[Math.cos(a) * (radius - 0.15 + jitter * 0.4), (i % 2) * 0.05, Math.sin(a) * (radius - 0.15 + jitter * 0.4)]} rotation={[0, 0, a - Math.PI / 2 + (i % 5) * 0.06]}>
             <coneGeometry args={[0.055, 0.5, 6]} />
             <meshBasicMaterial color={i % 2 === 0 ? color : secondary} toneMapped={false} />
+          </mesh>
+        )
+      })}
+    </group>
+  )
+}
+
+function Petal({ color, small = false }: { color: string; small?: boolean }) {
+  const s = small ? 0.8 : 1
+  return (
+    <group scale={s}>
+      {[0, 1, 2].map((i) => (
+        <mesh key={i} rotation={[Math.PI / 2, (i / 3) * Math.PI * 2, 0]}>
+          <planeGeometry args={[0.26, 0.16, 1, 1]} />
+          <meshBasicMaterial color={color} toneMapped={false} side={THREE.DoubleSide} transparent opacity={0.92} />
+        </mesh>
+      ))}
+    </group>
+  )
+}
+
+function Spring({ count, radius, height, color, accent }: { count: number; radius: number; height: number; color: string; accent: string }) {
+  return (
+    <group>
+      {Array.from({ length: count }).map((_, i) => {
+        const a = (i / count) * Math.PI * 2
+        const y = -height / 2 + (i / (count - 1)) * height
+        return (
+          <mesh
+            key={i}
+            position={[Math.cos(a) * radius, y, Math.sin(a) * radius]}
+            rotation={[Math.sin(a) * 0.3, 0, Math.cos(a) * -0.45]}
+          >
+            <torusGeometry args={[0.17, 0.05, 8, 14]} />
+            <meshBasicMaterial color={i % 2 === 0 ? color : accent} toneMapped={false} />
           </mesh>
         )
       })}
