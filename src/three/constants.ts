@@ -15,7 +15,7 @@ export const HALL_RADIUS_X = 4.6
 export const HALL_WIDTH = 12
 
 /** How far ahead of its stop each vignette hangs. Negative = ahead of camera. */
-export const VIGNETTE_AHEAD = -12
+export const VIGNETTE_AHEAD = -6
 
 /** Proximity (camera distance) within which a vignette renders. */
 export const VIGNETTE_RADIUS = 55
@@ -33,5 +33,5 @@ export function alcoveZ(index: number): number {
 
 export function alcoveX(index: number): number | null {
   // null keeps it centered for the deep alcove hero shots
-  return index % 2 === 0 ? -HALL_RADIUS_X * 0.72 : HALL_RADIUS_X * 0.72
+  return index % 2 === 0 ? -HALL_RADIUS_X * 0.55 : HALL_RADIUS_X * 0.55
 }

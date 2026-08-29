@@ -28,8 +28,8 @@ export function Vignette({ motif, palette, position }: { motif: string; palette:
 
   return (
     <group ref={ref} position={position} visible={false}>
-      <group scale={1.5}>
-        <StageLight color={palette.secondary} radius={1.75} opacity={0.24} />
+      <group scale={2}>
+        <StageLight color={palette.secondary} radius={1.9} opacity={0.28} />
         <group position={[0, 0.55, 0]}>{scene ? scene(palette) : <SoftGlow color={palette.glow} />}</group>
       </group>
     </group>
