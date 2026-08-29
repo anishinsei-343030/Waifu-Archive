@@ -1,7 +1,8 @@
 import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
+import * as THREE from 'three'
 import { scrollProgress, usePointerSmoothing } from '../lib/hooks'
-import { TRACK, LOOKAHEAD } from './constants'
+import { TRACK, LOOKAHEAD, alcoveX } from './constants'
 
 interface CameraRigProps {
   reduced: boolean
@@ -33,13 +34,20 @@ export function CameraRig({ reduced }: CameraRigProps) {
     const sway = Math.sin(t * 0.21) * 0.14
     const m = reduced ? 0.18 : 1
 
+    // cotton-soft gaze: find the nearest alcove and drift toward it as we pass
+    const flick = (scrollProgress.value - 0.2) / 0.052
+    const i = THREE.MathUtils.clamp(Math.round(flick), 0, 11)
+    const ax = alcoveX(i) ?? 0
+    const proximity = 1 - Math.min(1, Math.abs(flick - i) / 0.5)
+    const side = Math.sign(ax)
+
     const cam = state.camera
-    cam.position.x = px.current * 1.6 * m + sway * m
+    cam.position.x = px.current * 1.6 * m + sway * m + side * proximity * 0.9 * m
     cam.position.y = 0.55 + py.current * 0.7 * m + breath * m
     cam.position.z = eyeZ.current
 
     cam.lookAt(
-      cam.position.x * 0.55,
+      cam.position.x * 0.55 + side * proximity * 1.5,
       cam.position.y * 0.5 + 0.3,
       cam.position.z - LOOKAHEAD,
     )

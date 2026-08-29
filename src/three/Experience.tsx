@@ -30,18 +30,15 @@ export function Experience() {
       <Suspense fallback={null}>
         <CameraRig reduced={reduced} />
         <group scale={scale}>
-          <Petals count={tier === 'low' ? 70 : 150} />
-          <Lanterns count={tier === 'low' ? 12 : 22} />
+          <Petals count={tier === 'low' ? 90 : 200} />
+          <Lanterns count={tier === 'low' ? 14 : 28} />
           <HeroConstellation />
           <ToriiGate />
           <MotionLabObjects />
           {MOTIF_ORDER.map((id, i) => (
-            <Vignette
-              key={id}
-              motif={id}
-              palette={PALETTES[id]}
-              position={[alcoveX(i) ?? 0, 0, alcoveZ(i)]}
-            />
+            <group key={id} scale={1.5}>
+              <Vignette motif={id} palette={PALETTES[id]} position={[alcoveX(i) ?? 0, 0, alcoveZ(i)]} />
+            </group>
           ))}
         </group>
         <Effects tier={tier} />

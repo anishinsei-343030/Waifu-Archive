@@ -14,8 +14,8 @@ export const LOOKAHEAD = 9
 export const HALL_RADIUS_X = 4.6
 export const HALL_WIDTH = 12
 
-/** How far ahead of its stop each vignette hangs. */
-export const VIGNETTE_AHEAD = 6
+/** How far ahead of its stop each vignette hangs. Negative = ahead of camera. */
+export const VIGNETTE_AHEAD = -12
 
 /** Proximity (camera distance) within which a vignette renders. */
 export const VIGNETTE_RADIUS = 55

@@ -42,7 +42,7 @@ export function Petals({ count = 150 }: PetalsProps) {
         rot: Math.random() * Math.PI * 2,
         rotSpeed: (Math.random() - 0.5) * 1.6,
         phase: Math.random() * Math.PI * 2,
-        scale: 0.55 + Math.random() * 0.9,
+        scale: 0.8 + Math.random() * 1.3,
       })
     }
     return list
@@ -92,7 +92,7 @@ export function Petals({ count = 150 }: PetalsProps) {
   return (
     <instancedMesh ref={mesh} args={[undefined, undefined, count]} frustumCulled={false}>
       <planeGeometry args={[0.42, 0.3]} />
-      <meshBasicMaterial side={THREE.DoubleSide} transparent opacity={0.82} depthWrite={false} />
+      <meshBasicMaterial side={THREE.DoubleSide} transparent opacity={0.92} depthWrite={false} />
     </instancedMesh>
   )
 }
