@@ -82,7 +82,12 @@ were researched 2026-08 and verified from the public sources below. Nothing was 
 - https://www.animecharactersdatabase.com/quotesbycharacter.php?cid=15442
 - Caveat: the famous monologue is a shared voiceover between Taiga and Ryuuji.
 
-### Mikasa Ackerman (Attack on Titan)
-- https://en.wikipedia.org/wiki/Attack_on_Titan_(TV_series)
-- https://attackontitan.fandom.com/wiki/Mikasa_Ackerman
-- https://phraseninja.net/quote/sekai-wa-zankoku-da-soshite-totemo-utsukushii/
+### Sakura Yamauchi (I Want to Eat Your Pancreas)
+- https://en.wikipedia.org/wiki/I_Want_to_Eat_Your_Pancreas
+- https://en.wikipedia.org/wiki/Lynn_(voice_actress)
+- https://myanimelist.net/anime/33486
+
+### Kaori Miyazono (Your Lie in April)
+- https://en.wikipedia.org/wiki/Your_Lie_in_April
+- https://en.wikipedia.org/wiki/Risa_Taneda
+- https://myanimelist.net/anime/23273

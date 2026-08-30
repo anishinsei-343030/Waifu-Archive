@@ -16,7 +16,8 @@ expected .jpg — safest is to export/convert to .jpg with the exact name).
     emilia.jpg       Emilia           (Re:Zero)
     kurumi.jpg       Kurumi Tokisaki  (Date A Live)
     taiga.jpg        Taiga Aisaka     (Toradora!)
-    mikasa.jpg       Mikasa Ackerman  (Attack on Titan)
+    sakura.jpg       Sakura Yamauchi  (I Want to Eat Your Pancreas)
+    kaori.jpg        Kaori Miyazono   (Your Lie in April)
 
 Square or portrait crop works best (will be displayed object-cover,
 top-aligned). After saving, run the build + push so Vercel redeploys.
