@@ -3,7 +3,8 @@
 All character facts, quotes, studios, debut years, and voice actresses in `src/lib/waifus.ts`
 were researched 2026-08 and verified from the public sources below. Nothing was invented.
 
-> Fair-use notice: images are procedural 3D originals. Character names, series titles,
+> Fair-use notice: 11 portrait images are procedural 3D originals; the Sakura and Kaori
+> portraits are fan art sourced from Zerochan (URLs below). Character names, series titles,
 > and quotes belong to their respective studios/licensors. This is an unofficial tribute.
 
 ## Design & motion references
