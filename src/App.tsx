@@ -17,15 +17,18 @@ const Experience = lazy(async () => {
 export default function App() {
   useEffect(() => {
     const hallEl = document.getElementById('hall')
-    if (!hallEl) return
-    const io = new IntersectionObserver(
-      ([e]) => {
-        document.querySelector('main')?.classList.toggle('hide-sticky-alcoves', !e.isIntersecting)
-      },
-      { root: null, threshold: 0 }
-    )
-    io.observe(hallEl)
-    return () => io.disconnect()
+    const mainEl = document.querySelector('main')
+    if (!hallEl || !mainEl) return
+    const check = () => {
+      const bottom = hallEl.offsetTop + hallEl.offsetHeight
+      mainEl.classList.toggle(
+        'hide-sticky-alcoves',
+        window.scrollY + window.innerHeight > bottom + 200
+      )
+    }
+    window.addEventListener('scroll', check, { passive: true })
+    check()
+    return () => window.removeEventListener('scroll', check)
   }, [])
 
   return (

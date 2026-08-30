@@ -23,7 +23,7 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
   return (
     <section id={`waifu-${w.id}`} className="relative h-[170vh]">
       <div className="sticky top-0 flex h-screen items-center px-4 py-12 md:px-6">
-        <div className="mx-auto w-full max-w-4xl">
+        <div className="mx-auto w-full max-w-5xl">
           <Reveal className="max-w-[94vw]">
             <article
               className="glass-strong relative overflow-hidden rounded-[var(--radius-glass)] px-6 py-6 md:px-9 md:py-8"

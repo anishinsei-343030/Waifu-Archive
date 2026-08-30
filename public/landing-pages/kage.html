@@ -4676,6 +4676,12 @@ function updateWorld(dt) {
       g.visible = g.material.opacity > .004;
     });
   }
+  /* subtitle follows the wordmark's fade curve */
+  var subEl = document.getElementById('subtitle');
+  if (subEl) {
+    var subNear = smooth(0.02, 0.92, RIG.smooth);
+    subEl.style.opacity = String(Math.max(0, 1 - subNear * 1.1));
+  }
   /* the cut-out layers dissolve as the camera reaches them, so the path can
      walk straight through the garden instead of steering around the veil */
   if (WORLD.fg) WORLD.fg.forEach(m => {
