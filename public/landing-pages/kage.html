@@ -66,7 +66,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    WAIFU wordmark. Part of the backdrop iframe (a direct body child) so the
    parent page can never collide with it. */
 #subtitle{
-  position:absolute; top:80vh; left:50%; transform:translateX(-50%);
+  position:fixed; bottom:12vh; left:50%; transform:translateX(-50%);
   z-index:1; text-align:center; pointer-events:none;
   max-width:42rem; padding:0 24px; box-sizing:border-box;
   font-size:clamp(13px,.95vw,16px); line-height:1.7; font-weight:400;
@@ -4855,6 +4855,20 @@ function start() {
   INTRO.t0 = shot !== null ? 0 : (REDUCE ? performance.now() - 4000 : performance.now());
   queue();
   window.__kage = window.__secret = { RIG: RIG, WORLD: WORLD, WORD: WORD, CAM: CAM, POST: POST, renderer: renderer, scene: scene, camera: camera, anchors: () => anchors };
+  /* fade the subtitle out the moment the walk starts scrolling */
+  (function(){
+    var s = document.getElementById('subtitle');
+    if (!s) return;
+    function fade(){
+      if (window.scrollY > 5) {
+        s.style.transition = 'opacity 0.8s ease';
+        s.style.opacity = '0';
+        window.removeEventListener('scroll', fade);
+      }
+    }
+    window.addEventListener('scroll', fade, {passive:true});
+    fade();
+  })();
 }
 
 if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(boot, 0);
