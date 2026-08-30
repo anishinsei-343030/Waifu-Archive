@@ -25,7 +25,7 @@ export default function App() {
       <KageBackdrop />
       <div className="noise-overlay" aria-hidden="true" />
       <KatanaCursor />
-      <main className="relative z-10">
+      <main className="relative z-10 isolate">
         <Hero />
         <Intro />
         <div id="hall">

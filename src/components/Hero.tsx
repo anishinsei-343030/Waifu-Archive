@@ -25,31 +25,11 @@ export function Hero() {
         />
 
         <div className="pointer-events-none relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-          <Reveal delay={0.1}>
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8dbe8]" style={heroShadow}>
-              ( the eternal archive )
-            </p>
-          </Reveal>
-
           <Reveal delay={0.2}>
-            <h1 className="font-display font-black leading-[0.88] tracking-[-0.035em]" style={heroShadow}>
-              <span className="block text-[clamp(3.4rem,13vw,11rem)] text-[#ffe9f1]">WAIFU</span>
-              <span className="block text-[clamp(3.4rem,13vw,11rem)] text-[#ffb3d1]">ARCHIVE</span>
-            </h1>
-          </Reveal>
-
-          <Reveal delay={0.35}>
-            <p className="mt-7 max-w-md text-base leading-relaxed text-[#ecddea] md:max-w-lg md:text-lg" style={heroShadow}>
+            <p className="max-w-md text-base leading-relaxed text-[#ecddea] md:max-w-lg md:text-lg" style={heroShadow}>
               A rosette-lit hall of legendary anime heroines. Known as the
               eternal archive of the heart. Walk through, and every one of them will move for you.
             </p>
-          </Reveal>
-
-          <Reveal delay={0.65} className="mt-12">
-            <div className="flex items-center gap-3 text-xs font-medium tracking-[0.2em] text-[#e8dbe8]" style={heroShadow}>
-              <span className="size-2 animate-float rounded-full bg-pinkglow" aria-hidden="true" />
-              <span>scroll</span>
-            </div>
           </Reveal>
         </div>
       </div>
