@@ -13,11 +13,8 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
   return (
     <section id="vault" className="relative mx-auto max-w-6xl px-6 py-28">
       <Reveal>
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
-          ( the Vault )
-        </p>
         <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] font-black leading-none tracking-[-0.03em] text-ink">
-          The Vault
+          VAULT
         </h2>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-mute">
           One legend per alcove, and alcoves keep arriving. Jump to any one

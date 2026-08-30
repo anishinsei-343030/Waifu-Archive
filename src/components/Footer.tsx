@@ -21,6 +21,10 @@ export function Footer() {
       <p className="mt-8 text-[0.65rem] uppercase tracking-[0.3em] text-[#e8dbe8]/60">
         WAIFU ARCHIVE · built with love, three.js & GSAP
       </p>
+
+      <p className="mt-10 text-sm font-semibold tracking-[0.18em] text-[#ffe9f1]">
+        © 2026 WAIFU ARCHIVE — created by AniShinSei
+      </p>
     </footer>
   )
 }
