@@ -1,4 +1,4 @@
-import { KageLandingPage } from '@designcodeio/threeui'
+import { useEffect, useRef } from 'react'
 import { Reveal } from './Reveal'
 import { lenisRef } from '../lib/ScrollManager'
 
@@ -18,6 +18,41 @@ const heroShadow = {
 }
 
 export function Hero() {
+  const kageRef = useRef<HTMLIFrameElement>(null)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  const hideKageChrome = () => {
+    const kage = kageRef.current
+    const doc = kage?.contentDocument
+    if (!kage || !doc) return
+    const style = doc.createElement('style')
+    style.textContent =
+      'body > *:not(#gl):not(#vignette):not(#grain){visibility:hidden !important}'
+    doc.head.appendChild(style)
+    kage.contentWindow?.scrollTo(0, 0)
+  }
+
+  useEffect(() => {
+    let raf = 0
+    const drive = () => {
+      const kage = kageRef.current
+      const section = sectionRef.current
+      const doc = kage?.contentDocument
+      if (doc && section) {
+        const range = Math.max(1, section.getBoundingClientRect().height - window.innerHeight)
+        const top = section.getBoundingClientRect().top + window.scrollY
+        const p = Math.min(1, Math.max(0, (window.scrollY - top) / range))
+        const win = kage!.contentWindow!
+        const max = Math.max(0, doc.body.scrollHeight - win.innerHeight)
+        const target = p * max
+        if (Math.abs(win.scrollY - target) > 0.5) win.scrollTo(0, target)
+      }
+      raf = requestAnimationFrame(drive)
+    }
+    raf = requestAnimationFrame(drive)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
   const go = (id: string) => {
     const el = document.getElementById(id)
     if (!el) return
@@ -26,11 +61,20 @@ export function Hero() {
   }
 
   return (
-    <section id="hero" className="relative h-[180vh]">
+    <section id="hero" ref={sectionRef} className="relative h-[180vh]">
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Kage night-walk backdrop (hero object) */}
         <div id="hero-globe" className="absolute inset-0" aria-hidden="true">
-          <KageLandingPage style={{ width: '100%', height: '100%', pointerEvents: 'none' }} />
+          <iframe
+            ref={kageRef}
+            src="/landing-pages/kage.html"
+            title=""
+            loading="eager"
+            sandbox="allow-scripts allow-same-origin"
+            onLoad={hideKageChrome}
+            className="absolute inset-0 h-full w-full border-0 bg-[#080808]"
+            style={{ pointerEvents: 'none' }}
+          />
         </div>
 
         <div

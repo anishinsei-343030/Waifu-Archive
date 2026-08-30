@@ -1,8 +1,6 @@
 import { Suspense, lazy } from 'react'
 import { ScrollManager } from './lib/ScrollManager'
-import { useReducedMotion } from './lib/hooks'
 import { KatanaCursor } from './ui/KatanaCursor'
-import { DottedBackground } from './ui/DottedBackground'
 import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
 import { Intro } from './components/Intro'
@@ -17,20 +15,8 @@ const Experience = lazy(async () => {
 })
 
 export default function App() {
-  const reduced = useReducedMotion()
-
   return (
     <ScrollManager>
-      <div className="dot-bg" aria-hidden="true">
-        <DottedBackground
-          colors={['#ff9ec4', '#ffd6e6', '#ffffff', '#b48cff']}
-          bgColor="transparent"
-          cellSize={8}
-          paletteBias={6}
-          gamma={3}
-          play={!reduced}
-        />
-      </div>
       <div className="canvas-stage" aria-hidden="true">
         <Suspense fallback={null}>
           <Experience />
