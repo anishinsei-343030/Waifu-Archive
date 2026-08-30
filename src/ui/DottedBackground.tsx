@@ -41,10 +41,10 @@ const dotFragment = `
   uniform float uGamma;
   uniform float uAlpha;
 
-  vec3 pal(int i) {
-    if (i == 0) return uC0;
-    if (i == 1) return uC1;
-    if (i == 2) return uC2;
+  vec3 pal(float i) {
+    if (i < 0.5) return uC0;
+    else if (i < 1.5) return uC1;
+    else if (i < 2.5) return uC2;
     return uC3;
   }
 
@@ -58,8 +58,8 @@ const dotFragment = `
     float r = hash(id);
     float t = pow(r, uBias);
     float fi = clamp(t * 3.0, 0.0, 3.0);
-    int lo = int(floor(fi));
-    int hi = min(lo + 1, 3);
+    float lo = floor(fi);
+    float hi = min(lo + 1.0, 3.0);
     vec3 col = mix(pal(lo), pal(hi), fract(fi));
 
     vec2 center = (id + 0.5) * uCell;
