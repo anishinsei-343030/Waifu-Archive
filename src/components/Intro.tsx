@@ -10,18 +10,13 @@ const STATS = [
 export function Intro() {
   return (
     <section id="intro" className="relative mx-auto flex max-w-5xl flex-col items-center px-6 py-32 text-center md:py-44">
-      <Reveal>
-        <p className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-mute">
-          ( what is a waifu? )
-        </p>
-      </Reveal>
       <Reveal delay={0.1}>
         <h2 className="font-display font-black leading-[1.02] tracking-[-0.03em] text-ink">
           <span className="text-prosphantom text-[clamp(2rem,6vw,4.5rem)]">What is a waifu?</span>
         </h2>
       </Reveal>
       <Reveal delay={0.2}>
-        <p className="mt-8 max-w-2xl text-base leading-relaxed text-mute md:text-lg">
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-[#e8dbe8] md:text-lg">
           A waifu is a fictional character you love with your whole heart, a
           figure from anime and games so vividly written that affection stops
           being ironic. The word entered the world as shorthand for a favorite

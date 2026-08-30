@@ -1,8 +1,8 @@
 import { Suspense, lazy } from 'react'
 import { ScrollManager } from './lib/ScrollManager'
 import { KatanaCursor } from './ui/KatanaCursor'
-import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
+import { KageBackdrop } from './components/KageBackdrop'
 import { Intro } from './components/Intro'
 import { AlcoveSection } from './components/AlcoveSection'
 import { Vault } from './components/Vault'
@@ -22,9 +22,9 @@ export default function App() {
           <Experience />
         </Suspense>
       </div>
+      <KageBackdrop />
       <div className="noise-overlay" aria-hidden="true" />
       <KatanaCursor />
-      <Nav />
       <main className="relative z-10">
         <Hero />
         <Intro />
