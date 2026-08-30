@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect } from 'react'
+import { Suspense, lazy } from 'react'
 import { ScrollManager } from './lib/ScrollManager'
 import { KatanaCursor } from './ui/KatanaCursor'
 import { Hero } from './components/Hero'
@@ -15,22 +15,6 @@ const Experience = lazy(async () => {
 })
 
 export default function App() {
-  useEffect(() => {
-    const hallEl = document.getElementById('hall')
-    const mainEl = document.querySelector('main')
-    if (!hallEl || !mainEl) return
-    const check = () => {
-      const bottom = hallEl.offsetTop + hallEl.offsetHeight
-      mainEl.classList.toggle(
-        'hide-sticky-alcoves',
-        window.scrollY + window.innerHeight > bottom + 200
-      )
-    }
-    window.addEventListener('scroll', check, { passive: true })
-    check()
-    return () => window.removeEventListener('scroll', check)
-  }, [])
-
   return (
     <ScrollManager>
       <div className="canvas-stage" aria-hidden="true">

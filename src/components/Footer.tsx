@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="relative mx-auto max-w-6xl px-6 pb-20 pt-10 text-center">
-      <div className="hairline mx-auto mb-10 w-32" aria-hidden="true" />
+    <footer className="relative mx-auto max-w-6xl px-6 pb-16 pt-6 text-center">
+      <div className="hairline mx-auto mb-8 w-32" aria-hidden="true" />
 
       <h2 className="font-display text-2xl font-black tracking-[-0.02em] text-[#ffe9f1] md:text-3xl">Eternal love</h2>
       <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-[#e8dbe8]">

@@ -11,7 +11,7 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
   }
 
   return (
-    <section id="vault" className="relative mx-auto max-w-6xl px-6 py-28">
+    <section id="vault" className="relative mx-auto max-w-6xl px-6 pb-44 pt-28">
       <Reveal>
         <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] font-black leading-none tracking-[-0.03em] text-ink">
           VAULT
