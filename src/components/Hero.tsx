@@ -38,7 +38,7 @@ export function Hero() {
       const kage = kageRef.current
       const section = sectionRef.current
       const doc = kage?.contentDocument
-      if (doc && section) {
+      if (doc?.body && section) {
         const range = Math.max(1, section.getBoundingClientRect().height - window.innerHeight)
         const top = section.getBoundingClientRect().top + window.scrollY
         const p = Math.min(1, Math.max(0, (window.scrollY - top) / range))
