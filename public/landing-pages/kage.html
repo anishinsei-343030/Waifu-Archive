@@ -4144,13 +4144,15 @@ function layoutWord() {
      as the six-letter word could afford to, decapitates the K and the E. The
      narrow branch is held a little inside the edge because a phone frame has
      no gutter to lose the tracking that trails the final letter into. */
-  const fill = narrow ? .96 : 1.00;
+  const fill = narrow ? .56 : .52;
   const s = (R.x - L.x) * fill / WORD.ink.w;
   /* Two-line block (WAIFU over ARCHIVE): sit its centre just below mid-frame
      so the top row reads clearly and the lower row stays off the grass. The
      grass sheets are all behind the wordmark now (WORD_Z 7.0 + renderOrder
-     26), so this is pure composition, not a fight for visibility. */
-  const base = hit(0, narrow ? -.06 : -.30);
+     26), so this is pure composition, not a fight for visibility. The fill is
+     held low (~.52-.56 of frame width) so neither row dominates the frame or
+     clips at the viewport edges. */
+  const base = hit(0, narrow ? -.12 : -.22);
   WORD.group.scale.setScalar(s);
   WORD.group.position.set(-WORD.ink.cx * s, base.y, WORD_Z);
   WORD.rise = WORD.ink.asc * s * 1.25;
