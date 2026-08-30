@@ -61,6 +61,21 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .page{ position:relative; z-index:10; }
 
+/* ========================================================= hero subtitle */
+/* the archive's one-line promise, floated over the night scene below the
+   WAIFU wordmark. Part of the backdrop iframe (a direct body child) so the
+   parent page can never collide with it. */
+#subtitle{
+  position:fixed; bottom:12vh; left:50%; transform:translateX(-50%);
+  z-index:1; text-align:center; pointer-events:none;
+  max-width:42rem; padding:0 24px; box-sizing:border-box;
+  font-size:clamp(13px,.95vw,16px); line-height:1.7; font-weight:400;
+  color:#ecddea;
+  text-shadow:0 2px 4px rgba(255,255,255,.65), 0 10px 40px rgba(255,92,157,.22);
+  opacity:0; transition:opacity 1.2s ease .6s;
+}
+#subtitle.vis{ opacity:1; }
+
 /* ============================================================= type */
 .eyebrow{
   font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;
@@ -893,6 +908,8 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
 <canvas id="gl" aria-hidden="true"></canvas>
 <div id="vignette"></div>
 <div id="grain"></div>
+<div id="subtitle" aria-hidden="true">A rosette-lit hall of legendary anime heroines. Known as the
+  eternal archive of the heart. Walk through, and every one of them will move for you.</div>
 <div class="cur-dot" id="cursor"></div>
 
 <!-- ============================================================ preloader -->
@@ -3063,9 +3080,9 @@ function buildWordmark() {
       /* the vertical wash is baked per glyph so the whole word shares one ramp */
       const gy0 = PAD + g.asc - ascMax, gy1 = PAD + g.asc + descMax * .4;
       const grad = x.createLinearGradient(0, gy0, 0, gy1);
-      grad.addColorStop(0, 'rgb(226,236,229)');
-      grad.addColorStop(.52, 'rgb(198,214,203)');
-      grad.addColorStop(1, 'rgb(150,170,157)');
+      grad.addColorStop(0, '#ffe9f1');
+      grad.addColorStop(.5, '#ffb3d1');
+      grad.addColorStop(1, '#ff5c9d');
       x.fillStyle = grad;
       x.fillText(g.ch, PAD + g.l, PAD + g.asc);
 
@@ -4819,12 +4836,19 @@ function start() {
     $$('[data-rv], .mask-line').forEach(e => e.classList.add('rv-in'));
     document.body.classList.remove('is-locked');
     preEl.classList.add('done');
+    const st = document.getElementById('subtitle');
+    if (st) st.classList.add('vis');
   } else {
     preEl.classList.add('done');
     setTimeout(() => {
       document.body.classList.remove('is-locked');
       $('#hero').querySelectorAll('[data-rv], .mask-line').forEach((e, i) =>
         setTimeout(() => e.classList.add('rv-in'), REDUCE ? 0 : 120 + i * 95));
+      /* subtitle rides in with the wordmark instead of the page copy */
+      setTimeout(() => {
+        const s = document.getElementById('subtitle');
+        if (s) s.classList.add('vis');
+      }, REDUCE ? 0 : 900);
     }, REDUCE ? 0 : 340);
   }
   running = true; tPrev = performance.now();

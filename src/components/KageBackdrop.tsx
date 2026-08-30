@@ -14,7 +14,7 @@ export function KageBackdrop() {
     if (!kage || !doc) return
     const style = doc.createElement('style')
     style.textContent =
-      'body > *:not(#gl):not(#vignette):not(#grain){visibility:hidden !important}'
+      'body > *:not(#gl):not(#vignette):not(#grain):not(#subtitle){visibility:hidden !important}'
     doc.head.appendChild(style)
     kage.contentWindow?.scrollTo(0, 0)
   }

@@ -107,6 +107,12 @@ html {
   height: 0;
   display: none;
 }
+
+/* When the hall has scrolled out of view, hide its sticky alcove cards so the
+   last waifu doesn't float over the kage background at the bottom of the page */
+main.hide-sticky-alcoves #hall .sticky {
+  visibility: hidden;
+}
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {
   background: transparent;

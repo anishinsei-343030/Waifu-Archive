@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useEffect } from 'react'
 import { ScrollManager } from './lib/ScrollManager'
 import { KatanaCursor } from './ui/KatanaCursor'
 import { Hero } from './components/Hero'
@@ -15,6 +15,19 @@ const Experience = lazy(async () => {
 })
 
 export default function App() {
+  useEffect(() => {
+    const hallEl = document.getElementById('hall')
+    if (!hallEl) return
+    const io = new IntersectionObserver(
+      ([e]) => {
+        document.querySelector('main')?.classList.toggle('hide-sticky-alcoves', !e.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+    io.observe(hallEl)
+    return () => io.disconnect()
+  }, [])
+
   return (
     <ScrollManager>
       <div className="canvas-stage" aria-hidden="true">
