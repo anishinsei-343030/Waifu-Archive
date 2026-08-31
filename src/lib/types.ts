@@ -52,6 +52,15 @@ export type MotifId =
   | 'love-petal'
   | 'ice-blade'
   | 'musket-ribbon'
+  | 'hourglass-lights'
+  | 'bow-wind'
+  | 'firefly-spirit'
+  | 'fox-seal'
+  | 'lion-gem'
+  | 'red-butterfly'
+  | 'mask-shift'
+  | 'void-crystal'
+  | 'cherry-blossom'
 
 export interface Waifu {
   id: string

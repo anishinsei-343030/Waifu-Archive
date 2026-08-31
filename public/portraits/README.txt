@@ -46,6 +46,15 @@ Entries without a .jpg yet show a letter placeholder until the image drops.
     37 mitsuri.jpg        Mitsuri Kanroji (Demon Slayer)
     38 esdeath.jpg        Esdeath         (Akame ga Kill!)
     39 mami.jpg           Mami Tomoe      (Puella Magi Madoka Magica)
+    40 isla.jpg            Isla            (Plastic Memories)
+    41 sasha.jpg           Sasha Blouse    (Attack on Titan)
+    42 menma.jpg           Menma Honma     (Anohana: The Flower We Saw That Day)
+    43 kushina.jpg         Kushina Uzumaki (Naruto)
+    44 leone.jpg           Leone           (Akame ga Kill!)
+    45 kyouko.jpg          Kyouko Honda    (Fruits Basket)
+    46 chelsea.jpg         Chelsea         (Akame ga Kill!)
+    47 inori.jpg           Inori Yuzuriha  (Guilty Crown)
+    48 nagisa.jpg          Nagisa Furukawa (Clannad)
 
 Square or portrait crop works best (will be displayed object-cover,
 top-aligned). After saving, run the build + push so Vercel redeploys.

@@ -22,7 +22,7 @@ export function Footer() {
         Every character lives because someone, somewhere, refuses to forget.
       </p>
 
-      <p className="mt-4 max-w-md text-[0.7rem] leading-relaxed text-[#e8dbe8]/80">
+      <p className="mx-auto mt-4 max-w-md text-[0.7rem] leading-relaxed text-[#e8dbe8]/80">
         Built with React, Three.js, GSAP, Vite &amp; Tailwind CSS
       </p>
 

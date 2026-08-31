@@ -98,8 +98,10 @@ were researched 2026-08 and verified from the public sources below. Nothing was 
 ## 2026-08 expansion (26 new entries)
 
 The hall was re-ordered by the state the characters were left in — alive (1–26),
-fate unconfirmed (27–32), gone (33–39). Icon-only vignettes are definitive; text-level
+fate unconfirmed (27–32), gone (33–48). Icon-only vignettes are definitive; text-level
 fate summaries below carry a deliberate ambiguity flag where the series is ambiguous.
+Where an anime and its manga/novel diverge (Leone, Nagisa), the entry follows the anime
+and the divergence is documented under that character.
 
 ### Hinata Hyuga (Naruto) — alive
 - https://en.wikipedia.org/wiki/Hinata_Hyuga
@@ -311,9 +313,104 @@ fate summaries below carry a deliberate ambiguity flag where the series is ambig
 - Death: killed by the witch Charlotte in episode 3.
 - Birth: the fandom lists it only as "estimated March 15" — omitted.
 
+### Isla (Plastic Memories) — deceased
+- https://en.wikipedia.org/wiki/Plastic_Memories
+- https://plasticmemories.fandom.com/wiki/Isla
+- https://behindthevoiceactors.com/tv-shows/Plastic-Memories/
+- Nature of "death": Isla is a Giftia android; her terminal retrieval is a total memory
+  wipe, not an organic death. She is marked "gone" because her self is permanently
+  erased at the end of her 81,920-hour service life.
+- Quote: "I hope... someday, we'll meet again." — the widely-cited EN rendering of her
+  farewell line ("itsuka mata meguriaemasu you ni"); EN translation caveat.
+- VA: Sora Amamiya confirmed.
+
+### Sasha Blouse (Attack on Titan) — deceased
+- https://en.wikipedia.org/wiki/Sasha_Blouse
+- https://attackontitan.fandom.com/wiki/Sasha_Blouse
+- https://shapes.inc/fandom/attack-on-titan/quotes
+- Death: killed by Gabi Braun's rifle shot as the Survey Corps airship escaped Liberio
+  (manga Ch. 105 / anime S4 Pt1). Her final word was "Meat" (anime line).
+- Romanization note: "Blouse" is the official spelling; "Braus" is a fan transliteration.
+
+### Menma Honma (Anohana) — deceased
+- https://en.wikipedia.org/wiki/Ano_Hana
+- https://anohana.fandom.com/wiki/Menma_Honma
+- https://shapes.inc/fandom/anohana/quotes
+- Death: drowned as a child in the river, an accident witnessed by Poppo. Her unfulfilled
+  wish scattered the Super Peace Busters in guilt for a decade; she returns as a ghost
+  until the wish (a fireworks promise with Jinta) is fulfilled.
+- Quote: "I love you. It's the 'I want to marry you' type of I love you." — fan-subtitle
+  rendering; translation caveat.
+
+### Kushina Uzumaki (Naruto) — deceased
+- https://en.wikipedia.org/wiki/Naruto
+- https://naruto.fandom.com/wiki/Kushina_Uzumaki
+- https://en.wikiquote.org/wiki/Naruto
+- Death: the night of the Nine-Tails' attack, she and Minato sealed the fox into newborn
+  Naruto; she died taking a fatal strike meant for her son (flashback, Shippuden).
+- Quote: her farewell to baby Naruto, widely reproduced in fan translations:
+  "There will be hard and painful times ahead... take good care of yourself... because I
+  love you." — EN caveat, condensed faithfully.
+
+### Leone (Akame ga Kill!) — deceased
+- https://en.wikipedia.org/wiki/Akame_ga_Kill!
+- https://akamegakill.fandom.com/wiki/Leone
+- https://shapes.inc/fandom/akame-ga-kill/quotes
+- FATE NUANCE: the anime (White Fox, 2014) has Leone die — this entry follows the anime.
+  In the manga she survives to the end.
+- Death (anime, ep. 24): fatally wounded in the fight against Prime Minister Honest, she
+  makes sure he stays dead, then walks away to die alone at sunrise.
+- Quote: her final line to Tatsumi as she leaves ("I'm in pretty bad shape... old habits
+  die hard. Let me die somewhere I love, doing what I love. Best bud.") — episode 24
+  transcript, EN caveat.
+
+### Kyouko Honda (Fruits Basket) — deceased
+- https://en.wikipedia.org/wiki/Fruits_Basket
+- https://fruitsbasket.fandom.com/wiki/Kyoko_Honda
+- https://crowsworldofanime.com/fruits-basket-the-final-episode-12-review (death-scene
+  dialogue, streamed from the 2019 Final Season)
+- Death: killed by a car a few days after Kyo first runs into her, while walking with
+  Tohru. Her dying words to Kyo — "You need to... keep our old promise... or I'll never
+  forgive you." — were intended as "never forgive you if you don't keep protecting
+  Tohru"; Kyo misread them as a personal condemnation. That tragic irony drives his arc.
+- Version note: entry follows the 2019 8bit reboot (VA Miyuki Sawashiro); the 2001 anime
+  was Studio Deen.
+
+### Chelsea (Akame ga Kill!) — deceased
+- https://akamegakill.fandom.com/wiki/Chelsea
+- https://akamegakill.fandom.com/wiki/Episode_17
+- https://cbr.com/akame-ga-kill-best-quotes (verified kill-scene quote)
+- Death: ep. 17 "Kill the Curse" — after killing Bols (disguised as a village girl) and
+  attempting Kurome, Kurome survives and sends her puppets; Chelsea's teigu is destroyed
+  and her arms cut away, she is killed and beheaded, and her head is displayed on a pike
+  in the capital. Dead in both anime and manga.
+- Quote: her Bols-kill reveal — "About that kid, she lived in one of the villages you
+  incinerated under suspicion of aiding the Revolutionary Army." — EN caveat.
+- Birth: November 15 (character-profile databases); height 157 cm.
+
+### Inori Yuzuriha (Guilty Crown) — deceased
+- https://en.wikipedia.org/wiki/Guilty_Crown
+- https://guiltycrown.fandom.com/wiki/Inori_Yuzuriha
+- https://shapes.inc/fandom/guilty-crown/quotes
+- Death: ep. 22 "Prayer:Convergence" (aired 2012-03-22) — she draws the Apocalypse Virus
+  into herself to save Shu and crystallizes away, ending her song so he can live.
+- Quote: "This is the end of the song." — her final-moments line, referenced to her role
+  as Egoist's vocalist; EN caveat.
+
+### Nagisa Furukawa (Clannad) — deceased
+- https://en.wikipedia.org/wiki/Clannad_(visual_novel)
+- https://clannad.fandom.com/wiki/Furukawa_Nagisa
+- https://shapes.inc/fandom/clannad/quotes
+- FATE NUANCE: Nagisa dies in childbirth in the main route AND in the anime; the visual
+  novel's true ending ("Through the Dazzling Light") resurrects her. The hall marks her
+  deceased per the anime After Story, and documents the true-ending resurrection.
+- Quote: death-scene line — "...I'm so glad I could have her here with you, Tomoya... at
+  least we were all together..." — EN translation caveat.
+- Birth: December 24, 1984 (fandom-verified).
+
 ## Selection rationale
 
-All 39 hall residents are fan-waifu-ranked/best-girl characters drawn from community
+All 48 hall residents are fan-waifu-ranked/best-girl characters drawn from community
 polls — r/anime Best Girl Contest brackets, r/WaifuPolls (Rias Gremory repeatedly #1),
 MyWaifuList rankings, enjoyip waifu polls, and Entoin waifu surveys. The 26 entries
 added in the 2026-08 expansion were gated on public waifu/best-girl evidence; no filler

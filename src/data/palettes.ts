@@ -41,6 +41,15 @@ export const MOTIF_ORDER: MotifId[] = [
   'love-petal', // Mitsuri Kanroji
   'ice-blade', // Esdeath
   'musket-ribbon', // Mami Tomoe
+  'hourglass-lights', // Isla
+  'bow-wind', // Sasha Braus
+  'firefly-spirit', // Menma Honma
+  'fox-seal', // Kushina Uzumaki
+  'lion-gem', // Leone
+  'red-butterfly', // Kyouko Honda
+  'mask-shift', // Chelsea
+  'void-crystal', // Inori Yuzuriha
+  'cherry-blossom', // Nagisa Furukawa
 ]
 
 /** Procedural accent palettes — creative direction, not sourced facts. */
@@ -84,4 +93,13 @@ export const PALETTES: Record<MotifId, Palette> = {
   'love-petal': { primary: '#f28ca8', glow: '#ffd3de', accent: '#ffffff', secondary: '#ffb3c4' },
   'ice-blade': { primary: '#4fb6e0', glow: '#d0f0ff', accent: '#ffffff', secondary: '#9fe0f5' },
   'musket-ribbon': { primary: '#eab952', glow: '#fff0c0', accent: '#ffffff', secondary: '#d9b04a' },
+  'hourglass-lights': { primary: '#ff6b8a', glow: '#ffc4d2', accent: '#ffffff', secondary: '#ffa0b8' },
+  'bow-wind': { primary: '#66bb6a', glow: '#b8e0bb', accent: '#ffffff', secondary: '#8fce93' },
+  'firefly-spirit': { primary: '#b39ddb', glow: '#e1d6f5', accent: '#ffffff', secondary: '#cbb6e8' },
+  'fox-seal': { primary: '#e53935', glow: '#ffb7b3', accent: '#ffd54f', secondary: '#ef6f6a' },
+  'lion-gem': { primary: '#ffa726', glow: '#ffe0ad', accent: '#ffffff', secondary: '#ffc46b' },
+  'red-butterfly': { primary: '#ec407a', glow: '#ffb8d2', accent: '#ffffff', secondary: '#f2669b' },
+  'mask-shift': { primary: '#78909c', glow: '#c3cfd6', accent: '#ffffff', secondary: '#99aab3' },
+  'void-crystal': { primary: '#7c4dff', glow: '#c2aaff', accent: '#ffffff', secondary: '#9f7bff' },
+  'cherry-blossom': { primary: '#ff7043', glow: '#ffc1a8', accent: '#ffffff', secondary: '#ff9768' },
 }
