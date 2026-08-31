@@ -18,6 +18,19 @@ export function Footer() {
         researched from published sources listed in SOURCES.md.
       </p>
 
+      <p className="mx-auto mt-8 max-w-md text-sm italic leading-relaxed text-[#e8dbe8]/90">
+        Every character lives because someone, somewhere, refuses to forget.
+      </p>
+
+      <p className="mx-auto mt-8 max-w-md text-[0.7rem] leading-relaxed text-[#e8dbe8]/80">
+        Built with React, Three.js, GSAP, Vite &amp; Tailwind CSS
+      </p>
+
+      <p className="mx-auto mt-4 max-w-lg text-[0.7rem] leading-relaxed text-[#e8dbe8]/80">
+        Special thanks to the fan communities, archivists, and translators who
+        keep these stories alive across languages and generations.
+      </p>
+
       <p className="mt-8 text-[0.65rem] uppercase tracking-[0.3em] text-[#e8dbe8]/60">
         WAIFU ARCHIVE · built with love, three.js & GSAP
       </p>
