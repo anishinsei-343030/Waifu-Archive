@@ -118,6 +118,15 @@ export function AlcoveSection({ w, index }: { w: Waifu; index: number }) {
                       </p>
                     </div>
                   )}
+
+                  {w.uncertain && (
+                    <div className="mt-3 rounded-xl border border-white/70 bg-white/45 px-4 py-2.5">
+                      <p className="text-[0.6rem] font-bold uppercase tracking-[0.22em] text-pink">unknown</p>
+                      <p className="mt-0.5 text-xs font-semibold leading-snug text-ink/85">
+                        {w.uncertain.detail} — fate unconfirmed
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
 

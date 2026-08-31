@@ -20,6 +20,9 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
           One legend per alcove, and alcoves keep arriving. Jump to any one
           and the hall will glide you there.
         </p>
+        <p className="mt-2 max-w-xl text-xs font-semibold uppercase tracking-[0.16em] text-mute/80">
+          Ordered by the state they were left in — alive, unknown, gone
+        </p>
       </Reveal>
 
       <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -34,6 +37,15 @@ export function Vault({ waifus }: { waifus: Waifu[] }) {
                 style={{ background: `radial-gradient(120% 90% at 20% 0%, ${w.palette.primary}, transparent 60%)` }}
                 aria-hidden="true"
               />
+              {(w.uncertain || w.deceased) && (
+                <span
+                  className={`absolute right-3 top-3 z-10 rounded-full border bg-white/70 px-2.5 py-1 text-[0.6rem] font-bold uppercase tracking-[0.18em] ${
+                    w.deceased ? 'border-white/40 text-mute' : 'border-pink/40 text-pink'
+                  }`}
+                >
+                  {w.deceased ? 'deceased' : 'unknown'}
+                </span>
+              )}
               <div className="relative">
                 {w.image && (
                   <div
