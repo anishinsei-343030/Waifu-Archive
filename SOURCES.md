@@ -1,13 +1,14 @@
 # SOURCES.md — Every fact, traced
 
 All character facts, quotes, studios, debut years, and voice actresses in `src/lib/waifus.ts`
-were researched 2026-08 and verified from the public sources below. Nothing was invented.
+were researched 2026-08 (Kaoruko Waguri: 2026-10) and verified from the public sources
+below. Nothing was invented.
 
-> Fair-use notice: 13 single-heroine portraits ship with the site; the Sakura and Kaori
-> portraits are fan art sourced from Zerochan (URLs below). The 26 entries added in the
-> 2026-08 expansion render a letter placeholder until a portrait is dropped into
-> `public/portraits/` (see `public/portraits/README.txt`). Character names, series titles,
-> and quotes belong to their respective studios/licensors. This is an unofficial tribute.
+> Fair-use notice: 16 single-heroine portraits ship with the site; every one of the 46
+> residents is wired to `public/portraits/`, and entries whose file has not been dropped
+> yet render a letter placeholder (see `public/portraits/README.txt`). Character names,
+> series titles, and quotes belong to their respective studios/licensors. This is an
+> unofficial tribute.
 
 ## Design & motion references
 
@@ -95,13 +96,14 @@ were researched 2026-08 and verified from the public sources below. Nothing was 
 - https://en.wikipedia.org/wiki/Risa_Taneda
 - https://myanimelist.net/anime/23273
 
-## 2026-08 expansion (26 new entries)
+## 2026-08 expansion (26 new entries) + 2026-10 revision
 
-The hall was re-ordered by the state the characters were left in — alive (1–26),
-fate unconfirmed (27–32), gone (33–48). Icon-only vignettes are definitive; text-level
+The hall is ordered by the state the characters were left in — alive (1–27),
+fate unconfirmed (28–33), gone (34–46). Icon-only vignettes are definitive; text-level
 fate summaries below carry a deliberate ambiguity flag where the series is ambiguous.
-Where an anime and its manga/novel diverge (Leone, Nagisa), the entry follows the anime
-and the divergence is documented under that character.
+Where an anime and its manga/novel diverge, the entry follows the anime
+and the divergence is documented under that character. The 2026-10 revision added
+Kaoruko Waguri (resident #27) and removed Kushina Uzumaki, Leone, and Kyouko Honda.
 
 ### Hinata Hyuga (Naruto) — alive
 - https://en.wikipedia.org/wiki/Hinata_Hyuga
@@ -219,6 +221,16 @@ and the divergence is documented under that character.
 - https://en.wikiquote.org/wiki/High_School_DxD
 - Quote: her first words to Issei — LN Vol. 1 Life 1 (subtitle/dub variants; caveat).
 - Ranked #1 in multiple r/WaifuPolls community votes.
+
+### Kaoruko Waguri (The Fragrant Flower Blooms with Dignity) — alive (2026-10)
+- https://en.wikipedia.org/wiki/The_Fragrant_Flower_Blooms_with_Dignity
+- https://kaoruhana.fandom.com/wiki/Kaoruko_Waguri
+- https://shapes.inc/fandom/fragrant-flower-blossoms/quotes (quote source)
+- Anime: 2025 TV adaptation (CloverWorks), aired Jul 6–Sep 28 2025; VA Honoka Inoue.
+- Fate: alive — the season-one finale leaves her with Rintaro; no in-canon death.
+- Birth: July 22 (fandom-verified birthday).
+- Quote (Ch. 1), verified word-for-word on the shapes.inc quote listing: "To me, you're a
+  very kind and wonderful person, Tsumugi-kun." — used verbatim.
 
 ### Zero Two (DARLING in the FRANXX) — fate unconfirmed
 - https://en.wikipedia.org/wiki/Darling_in_the_FranXX
@@ -342,40 +354,6 @@ and the divergence is documented under that character.
 - Quote: "I love you. It's the 'I want to marry you' type of I love you." — fan-subtitle
   rendering; translation caveat.
 
-### Kushina Uzumaki (Naruto) — deceased
-- https://en.wikipedia.org/wiki/Naruto
-- https://naruto.fandom.com/wiki/Kushina_Uzumaki
-- https://en.wikiquote.org/wiki/Naruto
-- Death: the night of the Nine-Tails' attack, she and Minato sealed the fox into newborn
-  Naruto; she died taking a fatal strike meant for her son (flashback, Shippuden).
-- Quote: her farewell to baby Naruto, widely reproduced in fan translations:
-  "There will be hard and painful times ahead... take good care of yourself... because I
-  love you." — EN caveat, condensed faithfully.
-
-### Leone (Akame ga Kill!) — deceased
-- https://en.wikipedia.org/wiki/Akame_ga_Kill!
-- https://akamegakill.fandom.com/wiki/Leone
-- https://shapes.inc/fandom/akame-ga-kill/quotes
-- FATE NUANCE: the anime (White Fox, 2014) has Leone die — this entry follows the anime.
-  In the manga she survives to the end.
-- Death (anime, ep. 24): fatally wounded in the fight against Prime Minister Honest, she
-  makes sure he stays dead, then walks away to die alone at sunrise.
-- Quote: her final line to Tatsumi as she leaves ("I'm in pretty bad shape... old habits
-  die hard. Let me die somewhere I love, doing what I love. Best bud.") — episode 24
-  transcript, EN caveat.
-
-### Kyouko Honda (Fruits Basket) — deceased
-- https://en.wikipedia.org/wiki/Fruits_Basket
-- https://fruitsbasket.fandom.com/wiki/Kyoko_Honda
-- https://crowsworldofanime.com/fruits-basket-the-final-episode-12-review (death-scene
-  dialogue, streamed from the 2019 Final Season)
-- Death: killed by a car a few days after Kyo first runs into her, while walking with
-  Tohru. Her dying words to Kyo — "You need to... keep our old promise... or I'll never
-  forgive you." — were intended as "never forgive you if you don't keep protecting
-  Tohru"; Kyo misread them as a personal condemnation. That tragic irony drives his arc.
-- Version note: entry follows the 2019 8bit reboot (VA Miyuki Sawashiro); the 2001 anime
-  was Studio Deen.
-
 ### Chelsea (Akame ga Kill!) — deceased
 - https://akamegakill.fandom.com/wiki/Chelsea
 - https://akamegakill.fandom.com/wiki/Episode_17
@@ -410,8 +388,9 @@ and the divergence is documented under that character.
 
 ## Selection rationale
 
-All 48 hall residents are fan-waifu-ranked/best-girl characters drawn from community
+All 46 hall residents are fan-waifu-ranked/best-girl characters drawn from community
 polls — r/anime Best Girl Contest brackets, r/WaifuPolls (Rias Gremory repeatedly #1),
 MyWaifuList rankings, enjoyip waifu polls, and Entoin waifu surveys. The 26 entries
 added in the 2026-08 expansion were gated on public waifu/best-girl evidence; no filler
-or unranked characters were admitted.
+or unranked characters were admitted. The 2026-10 revision added Kaoruko Waguri on fan
+interest and removed the three entries whose removal the creator requested.

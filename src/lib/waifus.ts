@@ -5,7 +5,7 @@ import type { Waifu } from './types'
  * SOURCES.md. No quotes or dates were invented.
  *
  * The hall is ordered by the state the characters were left in:
- * 1–26 alive, 27–32 fate unconfirmed, 33–48 gone.
+ * 1–27 alive, 28–33 fate unconfirmed, 34–46 gone.
  */
 export const WAIFUS: Waifu[] = [
   {
@@ -306,6 +306,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'hinata',
+    image: '/portraits/hinata.jpg',
     name: 'Hinata Hyuga',
     series: 'Naruto',
     studio: 'Pierrot',
@@ -334,6 +335,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'yor',
+    image: '/portraits/yor.jpg',
     name: 'Yor Forger',
     series: 'Spy × Family',
     studio: 'WIT Studio / CloverWorks',
@@ -361,6 +363,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'mikasa',
+    image: '/portraits/mikasa.jpg',
     name: 'Mikasa Ackerman',
     series: 'Attack on Titan',
     studio: 'WIT Studio / MAPPA',
@@ -389,6 +392,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'nico-robin',
+    image: '/portraits/nico-robin.jpg',
     name: 'Nico Robin',
     series: 'One Piece',
     studio: 'Toei Animation',
@@ -417,6 +421,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'rin',
+    image: '/portraits/rin.jpg',
     name: 'Rin Tohsaka',
     series: 'Fate/stay night',
     studio: 'ufotable',
@@ -445,6 +450,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'chitanda',
+    image: '/portraits/chitanda.jpg',
     name: 'Chitanda Eru',
     series: 'Hyouka',
     studio: 'Kyoto Animation',
@@ -472,6 +478,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'senjougahara',
+    image: '/portraits/senjougahara.jpg',
     name: 'Hitagi Senjougahara',
     series: 'Monogatari',
     studio: 'Shaft',
@@ -500,6 +507,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'chika',
+    image: '/portraits/chika.jpg',
     name: 'Chika Fujiwara',
     series: 'Kaguya-sama: Love Is War',
     studio: 'A-1 Pictures',
@@ -528,6 +536,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'miku',
+    image: '/portraits/miku.jpg',
     name: 'Miku Nakano',
     series: 'The Quintessential Quintuplets',
     studio: 'Tezuka Productions / Bibury Animation Studios',
@@ -556,6 +565,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'nezuko',
+    image: '/portraits/nezuko.jpg',
     name: 'Nezuko Kamado',
     series: 'Demon Slayer: Kimetsu no Yaiba',
     studio: 'ufotable',
@@ -584,6 +594,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'raphtalia',
+    image: '/portraits/raphtalia.jpg',
     name: 'Raphtalia',
     series: 'The Rising of the Shield Hero',
     studio: 'Kinema Citrus',
@@ -611,6 +622,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'mai',
+    image: '/portraits/mai.jpg',
     name: 'Mai Sakurajima',
     series: 'Rascal Does Not Dream of Bunny Girl Senpai',
     studio: 'CloverWorks',
@@ -639,6 +651,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'violet',
+    image: '/portraits/violet.jpg',
     name: 'Violet Evergarden',
     series: 'Violet Evergarden',
     studio: 'Kyoto Animation',
@@ -667,6 +680,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'mikoto',
+    image: '/portraits/mikoto.jpg',
     name: 'Mikoto Misaka',
     series: 'A Certain Scientific Railgun',
     studio: 'J.C.Staff',
@@ -695,6 +709,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'oshino',
+    image: '/portraits/oshino.jpg',
     name: 'Shinobu Oshino',
     series: 'Monogatari',
     studio: 'Shaft',
@@ -722,6 +737,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'rias',
+    image: '/portraits/rias.jpg',
     name: 'Rias Gremory',
     series: 'High School DxD',
     studio: 'TNK',
@@ -749,6 +765,35 @@ export const WAIFUS: Waifu[] = [
     sources: ['en.wikipedia.org/wiki/High_School_DxD', 'highschooldxd.fandom.com/wiki/Rias_Gremory', 'en.wikiquote.org/wiki/High_School_DxD'],
   },
   {
+    id: 'kaoruko',
+    image: '/portraits/kaoruko.jpg',
+    name: 'Kaoruko Waguri',
+    series: 'The Fragrant Flower Blooms with Dignity',
+    studio: 'CloverWorks',
+    debut: '2025',
+    va: 'Honoka Inoue',
+    tagline: 'A kind scholarship student who sees past every face',
+    bio: [
+      'Kaoruko Waguri is a top scholarship student at the all-girls Kikyo Private Academy — kind, endlessly hungry, and completely unable to judge people by their looks.',
+      'A regular at the Tsumugi family p\u00e2tisserie, she befriends Rintaro Tsumugi, the boy every school rumor calls a delinquent, simply because she sees the heart behind the face.',
+    ],
+    whyLoved: [
+      'From the moment she meets the overgrown delinquent Rintaro Tsumugi, she is the only person who looks past his frightening face to the kind baker behind it.',
+      'Her enormous appetite, relentless diligence, and unfailing dignity made her the standout heroine of the 2025 season.',
+    ],
+    quoteEn: 'To me, you\u2019re a very kind and wonderful person, Tsumugi-kun.',
+    traits: [
+      { label: 'Kindness', value: 10 },
+      { label: 'Appetite', value: 10 },
+      { label: 'Diligence', value: 9 },
+    ],
+    palette: { primary: '#f48fb1', glow: '#ffd9e0', accent: '#ffffff', secondary: '#f9b3c8' },
+    motif: 'fragrant-bloom',
+    birth: { month: 7, day: 22 },
+    order: 27,
+    sources: ['en.wikipedia.org/wiki/The_Fragrant_Flower_Blooms_with_Dignity', 'kaoruhana.fandom.com/wiki/Kaoruko_Waguri', 'shapes.inc/fandom/fragrant-flower-blossoms/quotes'],
+  },
+  {
     id: 'zero-two',
     image: '/portraits/zero-two.jpg',
     name: 'Zero Two',
@@ -773,7 +818,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#ff5f8f', glow: '#ffb3d1', accent: '#ffd1dc', secondary: '#ff8fb2' },
     motif: 'horns-aurora',
-    order: 27,
+    order: 28,
     uncertain: {
       detail: 'the anime finale implies she and Hiro return as a child beneath a sakura tree, but the series never confirms the child is either of them; in the manga she survives beside Hiro — fans remain split on which fate is canon',
     },
@@ -781,6 +826,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'sayaka',
+    image: '/portraits/sayaka.jpg',
     name: 'Sayaka Miki',
     series: 'Puella Magi Madoka Magica',
     studio: 'Shaft',
@@ -803,7 +849,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#3f8ad0', glow: '#bfe0ff', accent: '#ffffff', secondary: '#6fb0e8' },
     motif: 'mermaid-blade',
-    order: 28,
+    order: 29,
     uncertain: {
       detail: 'she dies and becomes the witch Oktavia; in Rebellion the Law of Cycles carries every magical girl into a new existence, yet her body is never restored — sources describe her as both gone and at peace',
     },
@@ -811,6 +857,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'madoka',
+    image: '/portraits/madoka.jpg',
     name: 'Madoka Kaname',
     series: 'Puella Magi Madoka Magica',
     studio: 'Shaft',
@@ -834,7 +881,7 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#ff7f9e', glow: '#ffd3de', accent: '#ffffff', secondary: '#ffa3b8' },
     motif: 'pink-bow',
     birth: { month: 10, day: 3 },
-    order: 29,
+    order: 30,
     uncertain: {
       detail: 'she ascends into a concept — the Law of Cycles — that quietly dissolves witches; her human existence is erased from the world and she can only return under extraordinary conditions',
     },
@@ -842,6 +889,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'yuno',
+    image: '/portraits/yuno.jpg',
     name: 'Yuno Gasai',
     series: 'Future Diary',
     studio: 'asread',
@@ -864,7 +912,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#e84a7b', glow: '#ffc0d6', accent: '#ffffff', secondary: '#f07fa0' },
     motif: 'future-diary',
-    order: 30,
+    order: 31,
     uncertain: {
       detail: 'the Yuno of the original timeline dies winning godhood, while the surviving Yuno of the erased third world carries on in the Redial future — which is why sources disagree on her fate',
     },
@@ -872,6 +920,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'power',
+    image: '/portraits/power.jpg',
     name: 'Power',
     series: 'Chainsaw Man',
     studio: 'MAPPA',
@@ -894,7 +943,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#dd4e3f', glow: '#ffb8a8', accent: '#ffffff', secondary: '#e88e7b' },
     motif: 'blood-hammer',
-    order: 31,
+    order: 32,
     uncertain: {
       detail: 'killed by Makima, she seals a blood contract with Denji and returns arcs later as the reborn Blood Devil — alive as herself, but with no memory of him',
     },
@@ -902,6 +951,7 @@ export const WAIFUS: Waifu[] = [
   },
   {
     id: 'shouko-makinohara',
+    image: '/portraits/shouko.jpg',
     name: 'Shoko Makinohara',
     series: 'Rascal Does Not Dream of Bunny Girl Senpai',
     studio: 'CloverWorks',
@@ -925,7 +975,7 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#77c2dd', glow: '#d8f0fa', accent: '#ffffff', secondary: '#a3d8ec' },
     motif: 'heart-stitch',
     birth: { month: 4, day: 10 },
-    order: 32,
+    order: 33,
     uncertain: {
       detail: 'in the timelines they explore she dies of her congenital heart condition before the transplant date; in the worldline Sakuta finally reaches she is alive and awaiting surgery — both outcomes happen across the series',
     },
@@ -958,7 +1008,7 @@ export const WAIFUS: Waifu[] = [
     motif: 'petal-bloom',
     birth: { month: 3, day: 10 },
     deceased: { at: 'August 19, at 17', cause: 'a random attack after leaving the hospital' },
-    order: 33,
+    order: 34,
     sources: ['en.wikipedia.org/wiki/I_Want_to_Eat_Your_Pancreas', 'en.wikipedia.org/wiki/Lynn_(voice_actress)', 'myanimelist.net/anime/33486'],
   },
   {
@@ -987,11 +1037,12 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#7fb5ff', glow: '#d3e6ff', accent: '#ffffff', secondary: '#a8d0ff' },
     motif: 'violin-spring',
     deceased: { at: 'February 18, at 15', cause: 'the surgery that was meant to save her failed' },
-    order: 34,
+    order: 35,
     sources: ['en.wikipedia.org/wiki/Your_Lie_in_April', 'en.wikipedia.org/wiki/Risa_Taneda', 'myanimelist.net/anime/23273'],
   },
   {
     id: 'ai-hoshino',
+    image: '/portraits/ai-hoshino.jpg',
     name: 'Ai Hoshino',
     series: 'Oshi no Ko',
     studio: 'Doga Kobo',
@@ -1014,12 +1065,13 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#8f9ff5', glow: '#dfe4ff', accent: '#ffffff', secondary: '#b8c4ff' },
     motif: 'star-twinkle',
-    order: 35,
+    order: 36,
     deceased: { at: 'at 20, right after reuniting with her twins', cause: 'she was fatally stabbed by a disgruntled fan, Ryosuke Sugano, who had been given her address' },
     sources: ['oshinoko.fandom.com/wiki/Ai_Hoshino', 'en.wikipedia.org/wiki/Oshi_no_Ko', 'en.wikiquote.org/wiki/Oshi_no_Ko'],
   },
   {
     id: 'shinobu-kocho',
+    image: '/portraits/shinobu-kocho.jpg',
     name: 'Shinobu Kocho',
     series: 'Demon Slayer: Kimetsu no Yaiba',
     studio: 'ufotable',
@@ -1043,12 +1095,13 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#a78fe0', glow: '#e2d8ff', accent: '#ffffff', secondary: '#c3b8f2' },
     motif: 'butterfly-venom',
     birth: { month: 2, day: 24 },
-    order: 36,
+    order: 37,
     deceased: { at: 'in the Infinity Castle, during the fight against Upper Rank Doma', cause: 'she let herself be absorbed so her own body would poison him from within for a year before her poisoned form finished him' },
     sources: ['en.wikipedia.org/wiki/Shinobu_Kocho', 'kimetsu-no-yaiba.fandom.com/wiki/Shinobu_Kocho', 'en.wikiquote.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba'],
   },
   {
     id: 'mitsuri',
+    image: '/portraits/mitsuri.jpg',
     name: 'Mitsuri Kanroji',
     series: 'Demon Slayer: Kimetsu no Yaiba',
     studio: 'ufotable',
@@ -1072,12 +1125,13 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#f28ca8', glow: '#ffd3de', accent: '#ffffff', secondary: '#ffb3c4' },
     motif: 'love-petal',
     birth: { month: 6, day: 1 },
-    order: 37,
+    order: 38,
     deceased: { at: 'the final battle against Muzan, at sunrise', cause: 'she fell holding the mark of a demon slayer, sharing a last confession with Obanai before the light broke' },
     sources: ['en.wikipedia.org/wiki/Mitsuri_Kanroji', 'kimetsu-no-yaiba.fandom.com/wiki/Mitsuri_Kanroji', 'en.wikiquote.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba'],
   },
   {
     id: 'esdeath',
+    image: '/portraits/esdeath.jpg',
     name: 'Esdeath',
     series: 'Akame ga Kill!',
     studio: 'White Fox',
@@ -1100,12 +1154,13 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#4fb6e0', glow: '#d0f0ff', accent: '#ffffff', secondary: '#9fe0f5' },
     motif: 'ice-blade',
-    order: 38,
+    order: 39,
     deceased: { at: 'the final war, after falling to the Night Raid’s last union', cause: 'rather than yield, she froze herself solid and was shattered; no trace of her body was left' },
     sources: ['en.wikipedia.org/wiki/Akame_ga_Kill!', 'akamegakill.fandom.com/wiki/Esdeath', 'en.wikiquote.org/wiki/Akame_ga_Kill!'],
   },
   {
     id: 'mami',
+    image: '/portraits/mami.jpg',
     name: 'Mami Tomoe',
     series: 'Puella Magi Madoka Magica',
     studio: 'Shaft',
@@ -1128,7 +1183,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#eab952', glow: '#fff0c0', accent: '#ffffff', secondary: '#d9b04a' },
     motif: 'musket-ribbon',
-    order: 39,
+    order: 40,
     deceased: { at: 'the third episode, against the witch Charlotte', cause: 'Charlotte’s second form devoured her before anyone could react; only her body from the torso up remained' },
     sources: ['en.wikipedia.org/wiki/Mami_Tomoe', 'madoka.fandom.com/wiki/Mami_Tomoe', 'wiki.puella-magi.net/Mami_Tomoe'],
   },
@@ -1157,7 +1212,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#ff6b8a', glow: '#ffc4d2', accent: '#ffffff', secondary: '#ffa0b8' },
     motif: 'hourglass-lights',
-    order: 40,
+    order: 41,
     deceased: { at: 'her final day, at the end of her 81,920-hour service life', cause: 'as a Giftia due for terminal retrieval, her memories of Tsukasa were wiped while she smiled into the city lights — leaving only the hope that they would meet again someday' },
     sources: ['en.wikipedia.org/wiki/Plastic_Memories', 'plasticmemories.fandom.com/wiki/Isla', 'behindthevoiceactors.com/tv-shows/Plastic-Memories/'],
   },
@@ -1186,7 +1241,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#66bb6a', glow: '#b8e0bb', accent: '#ffffff', secondary: '#8fce93' },
     motif: 'bow-wind',
-    order: 41,
+    order: 42,
     deceased: { at: 'the sky above Liberio, in the final seconds of the raid', cause: 'shot through the chest by Gabi Braun just as the rescue arrived, her famous appetite silenced mid-word with a quiet “Meat...”' },
     sources: ['en.wikipedia.org/wiki/Sasha_Blouse', 'attackontitan.fandom.com/wiki/Sasha_Blouse', 'shapes.inc/fandom/attack-on-titan/quotes'],
   },
@@ -1215,96 +1270,9 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#b39ddb', glow: '#e1d6f5', accent: '#ffffff', secondary: '#cbb6e8' },
     motif: 'firefly-spirit',
-    order: 42,
+    order: 43,
     deceased: { at: 'a summer by the river, years before the series begins', cause: 'she fell into the river and drowned as a child in an accident witnessed by Poppo, her unfulfilled wish leaving the Super Peace Busters scattered in guilt for a decade' },
     sources: ['en.wikipedia.org/wiki/Ano_Hana', 'anohana.fandom.com/wiki/Menma_Honma', 'shapes.inc/fandom/anohana/quotes'],
-  },
-  {
-    id: 'kushina',
-    image: '/portraits/kushina.jpg',
-    name: 'Kushina Uzumaki',
-    series: 'Naruto',
-    studio: 'Studio Pierrot',
-    debut: '1999',
-    va: 'Emi Shinohara',
-    tagline: 'The Red Hot-Blooded Habanero who sealed everything into her son',
-    bio: [
-      'Kushina Uzumaki was the fierce, quick-tempered jinchuriki of the Nine-Tails and Naruto’s mother — a woman with a tongue like a habanero and a heart of pure steel.',
-      'On the night of the Nine-Tails’ attack, dying beside her newborn son, she trusted the entire future to him with her final words.',
-    ],
-    whyLoved: [
-      'Her wild kindness and her dying farewell made the reveal of Naruto’s true mother one of the franchise’s most beloved backstories.',
-      'Her last courage — taking the fox’s deathblow meant for her baby so he could live — turned her scene into a family legacy.',
-    ],
-    quoteEn: 'There will be hard and painful times ahead... so take good care of yourself... because I love you.',
-    traits: [
-      { label: 'Fierce heart', value: 10 },
-      { label: 'Motherly love', value: 10 },
-      { label: 'Temper', value: 9 },
-    ],
-    palette: { primary: '#e53935', glow: '#ffb7b3', accent: '#ffd54f', secondary: '#ef6f6a' },
-    motif: 'fox-seal',
-    order: 43,
-    deceased: { at: 'the night of the Nine-Tails’ attack on Konoha', cause: 'she and Minato gave their lives to seal the Nine-Tails into newborn Naruto, taking the beast’s fatal strike meant for her son' },
-    sources: ['en.wikiquote.org/wiki/Naruto', 'naruto.fandom.com/wiki/Kushina_Uzumaki', 'en.wikipedia.org/wiki/Naruto'],
-  },
-  {
-    id: 'leone',
-    image: '/portraits/leone.jpg',
-    name: 'Leone',
-    series: 'Akame ga Kill!',
-    studio: 'White Fox',
-    debut: '2014',
-    va: 'Yu Asakawa',
-    tagline: 'The lion-hearted lady of Night Raid who died doing what she loved',
-    bio: [
-      'Leone is the wild, brawling lioness of Night Raid whose Lionelle Teigu made her the team’s big sister and a one-on-one terror of the Empire.',
-      'After striking down Prime Minister Honest, she walked away from her wounds to spend her dignity on the sunrise she chose to die in.',
-    ],
-    whyLoved: [
-      'Her untamed confidence and unbreakable loyalty to Tatsumi made her the assassins’ favorite hugger and most honest voice.',
-      'Her final scene — refusing to let even dying take her smile — is Night Raid’s most defiant farewell.',
-    ],
-    quoteEn: 'I’m in pretty bad shape... old habits die hard. Let me die somewhere I love, doing what I love. Best bud.',
-    traits: [
-      { label: 'Lion spirit', value: 10 },
-      { label: 'Loyalty', value: 9 },
-      { label: 'Straight talk', value: 9 },
-    ],
-    palette: { primary: '#ffa726', glow: '#ffe0ad', accent: '#ffffff', secondary: '#ffc46b' },
-    motif: 'lion-gem',
-    order: 44,
-    deceased: { at: 'the capital, at dawn just after the final battle against Honest', cause: 'mortally wounded in the fight, she made sure her target stayed dead and then walked away to die alone — head high, in the sunrise, doing what she loved' },
-    sources: ['en.wikipedia.org/wiki/Akame_ga_Kill!', 'akamegakill.fandom.com/wiki/Leone', 'shapes.inc/fandom/akame-ga-kill/quotes'],
-  },
-  {
-    id: 'kyouko',
-    image: '/portraits/kyouko.jpg',
-    name: 'Kyouko Honda',
-    series: 'Fruits Basket',
-    studio: '8bit',
-    debut: '2019',
-    va: 'Miyuki Sawashiro',
-    tagline: 'The Red Butterfly whose last words kept a promise she left Kyo',
-    bio: [
-      'Kyouko Honda was once the feared delinquent known as the Red Butterfly, until Katsuya Honda’s love gave her a family and a reason to become gentle.',
-      'After his death she poured every remaining ounce of herself into raising Tohru — and into asking the boy cursed as the cat to watch over her daughter.',
-    ],
-    whyLoved: [
-      'Her redemption from legend of the streets to devoted mother made her one of Fruits Basket’s most beloved background lights.',
-      'The cruel irony of her dying words — meant as love, heard as condemnation — became the engine of Kyo’s entire arc.',
-    ],
-    quoteEn: 'You need to... keep our old promise... or I’ll never forgive you.',
-    traits: [
-      { label: 'Fierce love', value: 10 },
-      { label: 'Devotion', value: 9 },
-      { label: 'Legend factor', value: 9 },
-    ],
-    palette: { primary: '#ec407a', glow: '#ffb8d2', accent: '#ffffff', secondary: '#f2669b' },
-    motif: 'red-butterfly',
-    order: 45,
-    deceased: { at: 'a spring morning, in a traffic accident while Tohru walked to school', cause: 'struck by a car; her last breath went to Kyo, begging him to keep the promise that he would stay by Tohru’s side forever' },
-    sources: ['en.wikipedia.org/wiki/Fruits_Basket', 'fruitsbasket.fandom.com/wiki/Kyoko_Honda', 'crowsworldofanime.com/fruits-basket-the-final-episode-12-review'],
   },
   {
     id: 'chelsea',
@@ -1332,7 +1300,7 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#78909c', glow: '#c3cfd6', accent: '#ffffff', secondary: '#99aab3' },
     motif: 'mask-shift',
     birth: { month: 11, day: 15 },
-    order: 46,
+    order: 44,
     deceased: { at: 'a flower field, after Kurome survived her last assassination', cause: 'her cover blown, Kurome’s puppets cut both arms away and shot her in the back before beheading her; her head was raised on a pike in Romari as the Empire’s warning' },
     sources: ['akamegakill.fandom.com/wiki/Chelsea', 'akamegakill.fandom.com/wiki/Episode_17', 'cbr.com/akame-ga-kill-best-quotes'],
   },
@@ -1361,7 +1329,7 @@ export const WAIFUS: Waifu[] = [
     ],
     palette: { primary: '#7c4dff', glow: '#c2aaff', accent: '#ffffff', secondary: '#9f7bff' },
     motif: 'void-crystal',
-    order: 47,
+    order: 45,
     deceased: { at: 'the final battle inside GHQ, during the Fourth Apocalypse', cause: 'to save Shu from the Apocalypse Virus she drew it all into her own Void and crystallized away — ending the song so he could live to see the dawn' },
     sources: ['en.wikipedia.org/wiki/Guilty_Crown', 'guiltycrown.fandom.com/wiki/Inori_Yuzuriha', 'shapes.inc/fandom/guilty-crown/quotes'],
   },
@@ -1391,7 +1359,7 @@ export const WAIFUS: Waifu[] = [
     palette: { primary: '#ff7043', glow: '#ffc1a8', accent: '#ffffff', secondary: '#ff9768' },
     motif: 'cherry-blossom',
     birth: { month: 12, day: 24, year: 1984 },
-    order: 48,
+    order: 46,
     deceased: { at: 'the winter after Ushio was born, in the Furukawa house', cause: 'her long-standing illness finally took her shortly after childbirth, her last words handing her daughter to Tomoya with a smile of thanks' },
     sources: ['en.wikipedia.org/wiki/Clannad_(visual_novel)', 'clannad.fandom.com/wiki/Furukawa_Nagisa', 'shapes.inc/fandom/clannad/quotes'],
   },

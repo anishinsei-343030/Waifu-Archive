@@ -28,6 +28,7 @@ export const MOTIF_ORDER: MotifId[] = [
   'railgun-coin', // Mikoto Misaka
   'bat-glint', // Shinobu Oshino
   'devil-sigil', // Rias Gremory
+  'fragrant-bloom', // Kaoruko Waguri
   'horns-aurora', // Zero Two
   'mermaid-blade', // Sayaka Miki
   'pink-bow', // Madoka Kaname
@@ -44,9 +45,6 @@ export const MOTIF_ORDER: MotifId[] = [
   'hourglass-lights', // Isla
   'bow-wind', // Sasha Braus
   'firefly-spirit', // Menma Honma
-  'fox-seal', // Kushina Uzumaki
-  'lion-gem', // Leone
-  'red-butterfly', // Kyouko Honda
   'mask-shift', // Chelsea
   'void-crystal', // Inori Yuzuriha
   'cherry-blossom', // Nagisa Furukawa
@@ -83,6 +81,7 @@ export const PALETTES: Record<MotifId, Palette> = {
   'railgun-coin': { primary: '#f0a63d', glow: '#ffe6b8', accent: '#ffffff', secondary: '#ffc46f' },
   'bat-glint': { primary: '#d9a441', glow: '#ffe8b0', accent: '#ffffff', secondary: '#c08a2f' },
   'devil-sigil': { primary: '#c12638', glow: '#ffa3ad', accent: '#ffffff', secondary: '#dd6673' },
+  'fragrant-bloom': { primary: '#f48fb1', glow: '#ffd9e0', accent: '#ffffff', secondary: '#f9b3c8' },
   'mermaid-blade': { primary: '#3f8ad0', glow: '#bfe0ff', accent: '#ffffff', secondary: '#6fb0e8' },
   'pink-bow': { primary: '#ff7f9e', glow: '#ffd3de', accent: '#ffffff', secondary: '#ffa3b8' },
   'future-diary': { primary: '#e84a7b', glow: '#ffc0d6', accent: '#ffffff', secondary: '#f07fa0' },
@@ -96,9 +95,6 @@ export const PALETTES: Record<MotifId, Palette> = {
   'hourglass-lights': { primary: '#ff6b8a', glow: '#ffc4d2', accent: '#ffffff', secondary: '#ffa0b8' },
   'bow-wind': { primary: '#66bb6a', glow: '#b8e0bb', accent: '#ffffff', secondary: '#8fce93' },
   'firefly-spirit': { primary: '#b39ddb', glow: '#e1d6f5', accent: '#ffffff', secondary: '#cbb6e8' },
-  'fox-seal': { primary: '#e53935', glow: '#ffb7b3', accent: '#ffd54f', secondary: '#ef6f6a' },
-  'lion-gem': { primary: '#ffa726', glow: '#ffe0ad', accent: '#ffffff', secondary: '#ffc46b' },
-  'red-butterfly': { primary: '#ec407a', glow: '#ffb8d2', accent: '#ffffff', secondary: '#f2669b' },
   'mask-shift': { primary: '#78909c', glow: '#c3cfd6', accent: '#ffffff', secondary: '#99aab3' },
   'void-crystal': { primary: '#7c4dff', glow: '#c2aaff', accent: '#ffffff', secondary: '#9f7bff' },
   'cherry-blossom': { primary: '#ff7043', glow: '#ffc1a8', accent: '#ffffff', secondary: '#ff9768' },
