@@ -3,7 +3,7 @@ import { WAIFUS } from '../lib/waifus'
 
 const STATS = [
   { n: String(WAIFUS.length), label: 'legendary halls' },
-  { n: '2008–22', label: 'years of anime debut' },
+  { n: '2001–25', label: 'years of anime debut' },
   { n: '∞', label: 'devotion' },
 ]
 

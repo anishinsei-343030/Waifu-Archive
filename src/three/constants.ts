@@ -1,4 +1,6 @@
 /** Shared world constants for the scroll-dolly camera rig. */
+import { MOTIF_ORDER } from '../data/palettes'
+
 export const TRACK = 420
 
 /** Where each scene stop sits along the Z track (camera z = -progress * TRACK). */
@@ -18,13 +20,20 @@ export const HALL_WIDTH = 12
 export const VIGNETTE_AHEAD = -6
 
 /** Proximity (camera distance) within which a vignette renders. */
-export const VIGNETTE_RADIUS = 55
+export const VIGNETTE_RADIUS = 26
 
-/** Per-alcove fraction span (padded so stops never collide). */
-export const ALCOVE_SPAN = 0.052
+/** The hall starts just past the intro stop and ends before the vault. */
+export const ALCOVE_START = STOP.waifuIntro + 0.04
+const ALCOVE_END = STOP.vault - 0.04
+
+/**
+ * Per-alcove fraction span, derived from the roster so every resident's
+ * alcove sits inside the camera's reach (camera z caps at -TRACK).
+ */
+export const ALCOVE_SPAN = (ALCOVE_END - ALCOVE_START) / Math.max(1, MOTIF_ORDER.length - 1)
 
 export function alcoveFraction(index: number): number {
-  return 0.2 + index * ALCOVE_SPAN
+  return ALCOVE_START + index * ALCOVE_SPAN
 }
 
 export function alcoveZ(index: number): number {
