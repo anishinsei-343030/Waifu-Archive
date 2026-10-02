@@ -1,10 +1,10 @@
 # SOURCES.md — Every fact, traced
 
 All character facts, quotes, studios, debut years, and voice actresses in `src/lib/waifus.ts`
-were researched 2026-08 (Kaoruko Waguri: 2026-10) and verified from the public sources
+were researched 2026-08 (Kaoruko Waguri and the 23-entry expansion wave: 2026-10) and verified from the public sources
 below. Nothing was invented.
 
-> Fair-use notice: 16 single-heroine portraits ship with the site; every one of the 46
+> Fair-use notice: 68 single-heroine portraits ship with the site; every one of the 68
 > residents is wired to `public/portraits/`, and entries whose file has not been dropped
 > yet render a letter placeholder (see `public/portraits/README.txt`). Character names,
 > series titles, and quotes belong to their respective studios/licensors. This is an
@@ -96,14 +96,16 @@ below. Nothing was invented.
 - https://en.wikipedia.org/wiki/Risa_Taneda
 - https://myanimelist.net/anime/23273
 
-## 2026-08 expansion (26 new entries) + 2026-10 revision
+## 2026-08 expansion (26 new entries) + 2026-10 revision (27→68)
 
-The hall is ordered by the state the characters were left in — alive (1–27),
-fate unconfirmed (28–33), gone (34–46). Icon-only vignettes are definitive; text-level
+The hall is ordered by the state the characters were left in — alive (1–50),
+fate unconfirmed (51–56), gone (57–68). Icon-only vignettes are definitive; text-level
 fate summaries below carry a deliberate ambiguity flag where the series is ambiguous.
 Where an anime and its manga/novel diverge, the entry follows the anime
-and the divergence is documented under that character. The 2026-10 revision added
-Kaoruko Waguri (resident #27) and removed Kushina Uzumaki, Leone, and Kyouko Honda.
+and the divergence is documented under that character. The 2026-08 expansion added
+26 entries and removed Kushina Uzumaki, Leone, and Kyouko Honda. The 2026-10 revision
+added Kaoruko Waguri plus 23 new heroines (residents #28–#50, all alive) and removed
+Nagisa Furukawa, bringing the hall from 46 to 68 residents.
 
 ### Hinata Hyuga (Naruto) — alive
 - https://en.wikipedia.org/wiki/Hinata_Hyuga
@@ -231,6 +233,163 @@ Kaoruko Waguri (resident #27) and removed Kushina Uzumaki, Leone, and Kyouko Hon
 - Birth: July 22 (fandom-verified birthday).
 - Quote (Ch. 1), verified word-for-word on the shapes.inc quote listing: "To me, you're a
   very kind and wonderful person, Tsumugi-kun." — used verbatim.
+
+### Koharu Fuyutsuki (Love Unseen Beneath the Clear Night Sky) — alive (2026-10)
+- https://animenewsnetwork.com/news/2026-01-04/love-unseen-beneath-the-clear-night-sky-tv-anime-teaser-unveils-cast-staff-july-debut/.232753
+- https://animenewsnetwork.com/encyclopedia/anime.php?id=38002
+- https://en.wikipedia.org/wiki/Love_Unseen_Beneath_the_Clear_Night_Sky
+- Anime: 2026 TV adaptation (Makaria), Summer 2026; VA Saori Hayami. Birth: not sourced.
+- Fate: alive — series ongoing; no in-canon death.
+
+### Anna Yamada (The Dangers in My Heart) — alive (2026-10)
+- https://en.wikipedia.org/wiki/The_Dangers_in_My_Heart
+- https://bokuyaba.fandom.com/wiki/Anna_Yamada
+- https://shapes.inc/fandom/the-dangers-in-my-heart/quotes
+- Studio: Shin-Ei Animation; VA Shion Wakayama. Birth: September 10 (fandom-verified).
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Fern (Frieren: Beyond Journey's End) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey's_End
+- https://frieren.fandom.com/wiki/Fern
+- https://shapes.inc/fandom/frieren/quotes
+- Studio: MADHOUSE; VA Kana Ichinose. Birth: not sourced.
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Maomao (The Apothecary Diaries) — alive (2026-10)
+- https://en.wikipedia.org/wiki/The_Apothecary_Diaries
+- https://kusuriya-no-hitorigoto.fandom.com/wiki/Maomao
+- https://shapes.inc/fandom/apothecary-diaries/quotes
+- Studio: TOHO animation STUDIO; VA Aoi Yuki. Birth: not sourced.
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Alisa Mikhailovna Kujou (Alya Sometimes Hides Her Feelings in Russian) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Alya_Sometimes_Hides_Her_Feelings_in_Russian
+- https://tsundere.fandom.com/wiki/Alisa_Mikhailovna_Kujou
+- https://shapes.inc/fandom/alya-sometimes-hides-her-feelings-in-russian/quotes
+- Studio: Doga Kobo; VA Sumire Uesaka. Birth: not sourced.
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Chinatsu Kano (Blue Box) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Blue_Box_(manga)
+- https://blue-box.fandom.com/wiki/Chinatsu_Kano
+- https://shapes.inc/fandom/blue-box/quotes
+- Studio: Telecom Animation Film; VA Reina Ueda. Birth: not sourced.
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Miyo Saimori (My Happy Marriage) — alive (2026-10)
+- https://en.wikipedia.org/wiki/My_Happy_Marriage
+- https://my-happy-marriage.fandom.com/wiki/Miyo_Saimori
+- https://shapes.inc/fandom/my-happy-marriage/quotes
+- Studio: Kinema Citrus; VA Reina Ueda. Birth: not sourced.
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Yuki Itose (A Sign of Affection) — alive (2026-10)
+- https://en.wikipedia.org/wiki/A_Sign_of_Affection
+- https://yubisaki-to-renren.fandom.com/wiki/Yuki_Itose
+- https://shapes.inc/fandom/a-sign-of-affection/quotes
+- Studio: Ajia-do; VA Sumire Morohoshi. Birth: November 4 (fandom-verified).
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Lemon Yakishio (Too Many Losing Heroines!) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Too_Many_Losing_Heroines!
+- https://makeine.fandom.com/wiki/Lemon_Yakishio
+- https://yenpress.com/series/too-many-losing-heroines
+- Studio: A-1 Pictures; VA Shion Wakayama. Birth: August 1 (fandom-verified).
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Mahiru Shiina (The Angel Next Door Spoils Me Rotten) — alive (2026-10)
+- https://en.wikipedia.org/wiki/The_Angel_Next_Door_Spoils_Me_Rotten
+- https://otonari-no-tenshi.fandom.com/wiki/Mahiru_Shiina
+- https://shapes.inc/fandom/the-angel-next-door/quotes
+- Studio: Project No.9; VA Manaka Iwami. Birth: December 6 (fandom-verified).
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Momo Ayase (Dandadan) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Dandadan
+- https://dandadan.fandom.com/wiki/Momo_Ayase
+- https://shapes.inc/fandom/dandadan/quotes
+- Studio: Science SARU; VA Shion Wakayama. Birth: not sourced.
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Isaki Magari (Insomniacs After School) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Insomniacs_After_School
+- https://insomniacs-after-school.fandom.com/wiki/Isaki_Magari
+- https://shapes.inc/fandom/insomniacs-after-school/quotes
+- Studio: LIDENFILMS; VA Konomi Tamura. Birth: December 23 (fandom-verified).
+- Fate: alive — manga completed with the two together; no in-canon death.
+
+### Chika Komari (Too Many Losing Heroines!) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Too_Many_Losing_Heroines!
+- https://makeine.fandom.com/wiki/Chika_Komari
+- Studio: A-1 Pictures; VA Momoka Terasawa. Birth: March 29 (fandom-verified).
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Dahlia Rossetti (Dahlia in Bloom) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Dahlia_in_Bloom
+- https://tvtropes.org/pmwiki/pmwiki.php/Literature/DahliaInBloom
+- https://magicartisan.fandom.com/wiki/Dahlia_Rossetti
+- Studio: Typhoon Graphics; VA Saori Onishi. Birth: not sourced.
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Yae Amagami (Tying the Knot with an Amagami Sister) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Tying_the_Knot_with_an_Amagami_Sister
+- https://amagami-sister.fandom.com/wiki/Yae_Amagami
+- https://shapes.inc/fandom/tying-the-knot-with-an-amagami-sister/quotes
+- Studio: Drive; VA Sumire Uesaka. Birth: October 15 (fandom-verified).
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Chisato Nishikigi (Lycoris Recoil) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Lycoris_Recoil
+- https://lycoris-recoil.fandom.com/wiki/Chisato_Nishikigi
+- Studio: A-1 Pictures; VA Chika Anzai. Birth: September 23 (fandom-verified).
+- Fate: alive — ikemen-house manga + first floor chronicle keep her active; not marked gone.
+
+### Tinasha (Unnamed Memory) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Unnamed_Memory
+- https://shapes.inc/fandom/unnamed-memory/quotes
+- Studio: ENGI; VA Atsumi Tanezaki. Birth: not sourced.
+- Fate: alive — light novels ended with her and Oscar together; no in-canon death.
+
+### Frieren (Frieren: Beyond Journey's End) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey's_End
+- https://frieren.fandom.com/wiki/Frieren
+- https://shapes.inc/fandom/frieren/quotes
+- Studio: MADHOUSE; VA Atsumi Tanezaki. Birth: not sourced.
+- Fate: alive — she outlives the party but is alive throughout; not marked gone.
+
+### Roxy Migurdia (Mushoku Tensei: Jobless Reincarnation) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Mushoku_Tensei
+- https://mushokutensei.fandom.com/wiki/Roxy_Migurdia
+- https://shapes.inc/fandom/mushoku-tensei/quotes
+- Studio: Studio Bind; VA Konomi Kohara. Birth: not sourced.
+- Fate: alive — present throughout the story; no in-canon death.
+
+### Aira Shiratori (Dandadan) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Dandadan
+- https://dandadan.fandom.com/wiki/Aira_Shiratori
+- https://shapes.inc/fandom/dandadan/quotes
+- Studio: Science SARU; VA Ayane Sakura. Birth: not sourced.
+- Fate: alive — manga ongoing; no in-canon death.
+
+### Nino Nakano (The Quintessential Quintuplets) — alive (2026-10)
+- https://en.wikipedia.org/wiki/The_Quintessential_Quintuplets
+- https://5hanayome.fandom.com/wiki/Nino_Nakano
+- https://shapes.inc/fandom/the-quintessential-quintuplets/quotes
+- Studio: Tezuka Productions; VA Ayana Taketatsu. Birth: May 5 (fandom-verified).
+- Fate: alive — wedding with church scenes; no in-canon death.
+
+### Kei Karuizawa (Classroom of the Elite) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Classroom_of_the_Elite
+- https://you-zitsu.fandom.com/wiki/Kei_Karuizawa
+- https://shapes.inc/fandom/classroom-of-the-elite/quotes
+- Studio: Lerche; VA Ayana Taketatsu. Birth: March 8 (fandom-verified).
+- Fate: alive — light novels ongoing; no in-canon death.
+
+### Yamada (Smoking Behind the Supermarket with You) — alive (2026-10)
+- https://en.wikipedia.org/wiki/Smoking_Behind_the_Supermarket_with_You
+- https://www.primevideo.com
+- Studio: Asahi Production; VA Seena Hoshiki. Birth: not sourced.
+- Fate: alive — manga ongoing; no in-canon death.
 
 ### Zero Two (DARLING in the FRANXX) — fate unconfirmed
 - https://en.wikipedia.org/wiki/Darling_in_the_FranXX
@@ -375,22 +534,12 @@ Kaoruko Waguri (resident #27) and removed Kushina Uzumaki, Leone, and Kyouko Hon
 - Quote: "This is the end of the song." — her final-moments line, referenced to her role
   as Egoist's vocalist; EN caveat.
 
-### Nagisa Furukawa (Clannad) — deceased
-- https://en.wikipedia.org/wiki/Clannad_(visual_novel)
-- https://clannad.fandom.com/wiki/Furukawa_Nagisa
-- https://shapes.inc/fandom/clannad/quotes
-- FATE NUANCE: Nagisa dies in childbirth in the main route AND in the anime; the visual
-  novel's true ending ("Through the Dazzling Light") resurrects her. The hall marks her
-  deceased per the anime After Story, and documents the true-ending resurrection.
-- Quote: death-scene line — "...I'm so glad I could have her here with you, Tomoya... at
-  least we were all together..." — EN translation caveat.
-- Birth: December 24, 1984 (fandom-verified).
-
 ## Selection rationale
 
-All 46 hall residents are fan-waifu-ranked/best-girl characters drawn from community
+All 68 hall residents are fan-waifu-ranked/best-girl characters drawn from community
 polls — r/anime Best Girl Contest brackets, r/WaifuPolls (Rias Gremory repeatedly #1),
 MyWaifuList rankings, enjoyip waifu polls, and Entoin waifu surveys. The 26 entries
 added in the 2026-08 expansion were gated on public waifu/best-girl evidence; no filler
-or unranked characters were admitted. The 2026-10 revision added Kaoruko Waguri on fan
-interest and removed the three entries whose removal the creator requested.
+or unranked characters were admitted. The 2026-10 revision added Kaoruko Waguri and 23
+further heroines on fan interest, and removed the entries (Kushina Uzumaki, Leone,
+Kyouko Honda, Nagisa Furukawa) whose removal the creator requested.

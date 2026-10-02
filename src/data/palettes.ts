@@ -29,6 +29,29 @@ export const MOTIF_ORDER: MotifId[] = [
   'bat-glint', // Shinobu Oshino
   'devil-sigil', // Rias Gremory
   'fragrant-bloom', // Kaoruko Waguri
+  'lantern-fire', // Koharu Fuyutsuki
+  'snack-moon', // Anna Yamada
+  'iron-staff', // Fern
+  'herb-veil', // Maomao
+  'snow-lily', // Alya
+  'net-arc', // Chinatsu Kano
+  'camellia-veil', // Miyo Saimori
+  'sign-wave', // Yuki Itose
+  'lemon-burst', // Lemon Yakishio
+  'angel-star', // Mahiru Shiina
+  'spirit-flare', // Momo Ayase
+  'star-dome', // Isaki Magari
+  'bunny-blush', // Chika Komari
+  'forge-spark', // Dahlia Rossetti
+  'brush-stroke', // Yae Amagami
+  'lycoris-petal', // Chisato Nishikigi
+  'moon-witch', // Tinasha
+  'grimoire-leaf', // Frieren
+  'azure-wand', // Roxy Migurdia
+  'aura-crown', // Aira Shiratori
+  'ribbon-twin', // Nino Nakano
+  'veneer-star', // Kei Karuizawa
+  'twotone-smile', // Yamada
   'horns-aurora', // Zero Two
   'mermaid-blade', // Sayaka Miki
   'pink-bow', // Madoka Kaname
@@ -47,7 +70,6 @@ export const MOTIF_ORDER: MotifId[] = [
   'firefly-spirit', // Menma Honma
   'mask-shift', // Chelsea
   'void-crystal', // Inori Yuzuriha
-  'cherry-blossom', // Nagisa Furukawa
 ]
 
 /** Procedural accent palettes — creative direction, not sourced facts. */
@@ -82,6 +104,29 @@ export const PALETTES: Record<MotifId, Palette> = {
   'bat-glint': { primary: '#d9a441', glow: '#ffe8b0', accent: '#ffffff', secondary: '#c08a2f' },
   'devil-sigil': { primary: '#c12638', glow: '#ffa3ad', accent: '#ffffff', secondary: '#dd6673' },
   'fragrant-bloom': { primary: '#f48fb1', glow: '#ffd9e0', accent: '#ffffff', secondary: '#f9b3c8' },
+  'lantern-fire': { primary: '#26387d', glow: '#ffb066', accent: '#ffffff', secondary: '#7f93d9' },
+  'snack-moon': { primary: '#e8a04c', glow: '#ffe3b3', accent: '#ffffff', secondary: '#f7c479' },
+  'iron-staff': { primary: '#2c3948', glow: '#aec3e0', accent: '#ffffff', secondary: '#5e718f' },
+  'herb-veil': { primary: '#3f9d6e', glow: '#b4e3c6', accent: '#ffffff', secondary: '#66bd8f' },
+  'snow-lily': { primary: '#cfd6f0', glow: '#eef1ff', accent: '#8fa3e0', secondary: '#aab6e8' },
+  'net-arc': { primary: '#3d8dd6', glow: '#a8dcff', accent: '#ff8c42', secondary: '#6fb0e8' },
+  'camellia-veil': { primary: '#c98cb0', glow: '#f4d3e3', accent: '#ffffff', secondary: '#b06a99' },
+  'sign-wave': { primary: '#5cc9c2', glow: '#bdece8', accent: '#ffffff', secondary: '#86d9d3' },
+  'lemon-burst': { primary: '#f2c94c', glow: '#ffe9a8', accent: '#66bb6a', secondary: '#e1b63a' },
+  'angel-star': { primary: '#f5f2e9', glow: '#ffffff', accent: '#f2b063', secondary: '#eadfc9' },
+  'spirit-flare': { primary: '#ff7a3d', glow: '#ffc9a8', accent: '#8f6be8', secondary: '#ff9f73' },
+  'star-dome': { primary: '#2b4a7a', glow: '#8fb3e8', accent: '#ffd166', secondary: '#5977a8' },
+  'bunny-blush': { primary: '#f28fb0', glow: '#ffd3e3', accent: '#ffffff', secondary: '#f7a9c4' },
+  'forge-spark': { primary: '#c96f3d', glow: '#ffc9a0', accent: '#ffd166', secondary: '#df9663' },
+  'brush-stroke': { primary: '#c1433f', glow: '#ffb0a3', accent: '#ffffff', secondary: '#d96f63' },
+  'lycoris-petal': { primary: '#d14b4b', glow: '#ffb3a3', accent: '#ffffff', secondary: '#e07a63' },
+  'moon-witch': { primary: '#7f8fd0', glow: '#ccd6f7', accent: '#ffffff', secondary: '#9ca9de' },
+  'grimoire-leaf': { primary: '#6fae8f', glow: '#c6e8d3', accent: '#2c3948', secondary: '#8fc7ab' },
+  'azure-wand': { primary: '#5b9fe0', glow: '#b4d8f7', accent: '#ffffff', secondary: '#7fb8ee' },
+  'aura-crown': { primary: '#e8b04c', glow: '#ffd98f', accent: '#ffffff', secondary: '#b08a2f' },
+  'ribbon-twin': { primary: '#c0304e', glow: '#ff9fb0', accent: '#ffffff', secondary: '#d65f77' },
+  'veneer-star': { primary: '#b89fc0', glow: '#e6d6ea', accent: '#ffffff', secondary: '#8f6fa0' },
+  'twotone-smile': { primary: '#5b8fd0', glow: '#b8d6f2', accent: '#ffcb6e', secondary: '#7fa8de' },
   'mermaid-blade': { primary: '#3f8ad0', glow: '#bfe0ff', accent: '#ffffff', secondary: '#6fb0e8' },
   'pink-bow': { primary: '#ff7f9e', glow: '#ffd3de', accent: '#ffffff', secondary: '#ffa3b8' },
   'future-diary': { primary: '#e84a7b', glow: '#ffc0d6', accent: '#ffffff', secondary: '#f07fa0' },
@@ -97,5 +142,4 @@ export const PALETTES: Record<MotifId, Palette> = {
   'firefly-spirit': { primary: '#b39ddb', glow: '#e1d6f5', accent: '#ffffff', secondary: '#cbb6e8' },
   'mask-shift': { primary: '#78909c', glow: '#c3cfd6', accent: '#ffffff', secondary: '#99aab3' },
   'void-crystal': { primary: '#7c4dff', glow: '#c2aaff', accent: '#ffffff', secondary: '#9f7bff' },
-  'cherry-blossom': { primary: '#ff7043', glow: '#ffc1a8', accent: '#ffffff', secondary: '#ff9768' },
 }
